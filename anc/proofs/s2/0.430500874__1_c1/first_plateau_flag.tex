@@ -1,0 +1,179 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\title{An explicit optimal three-point flag SDP for the first plateau}
+\author{}\date{}\maketitle
+Put
+\[
+s=\sqrt7,\qquad t=\frac{s-1}{2},\qquad
+B=2s-5,\qquad V=\frac{2s-4}{3},\qquad a=3V=2s-4.
+\]
+We give a single rank-one matrix attaining the exact first plateau.
+It proves the sharp graph inequality directly, without an edge-elimination
+or fixed-point reduction in the upper-bound argument.
+
+\paragraph{The five patterns and four flags.}
+Consider an ordered graph with the interval property: for $x<y<z$,
+an edge $xz$ implies both $xy$ and $yz$.
+Its three-point patterns are $0$ (empty), $L$ (only the lower pair),
+$H$ (only the upper pair), $P$ (both consecutive pairs), and $T$ (triangle).
+For a single root, order the two-point flags as
+\[
+(F_1,F_2,F_3,F_4)
+=(\text{lower nonneighbor},\text{lower neighbor},
+  \text{upper neighbor},\text{upper nonneighbor}).
+\]
+Let $M(G)$ be the flag-product matrix for a three-point pattern $G$:
+choose the root uniformly among its three vertices, and choose the two
+remaining vertices as the two disjoint one-vertex extensions, in random
+order. This is the standard family $(t_{\rm root},f)=(1,2)$ at sample
+size three.
+
+\begin{theorem}[An explicit optimal matrix]
+For the graph objective $g(G)=(1+\mathbf1_H(G)-\mathbf1_T(G))/3$,
+the three-point flag SDP has optimal upper bound $V$.
+A single optimal PSD matrix is
+\[
+\boxed{
+Q=Vvv^\top,
+\qquad v=(-t,1,1,0)^\top,
+}
+\]
+or explicitly
+\[
+Q=\begin{pmatrix}
+2s-5&s-3&s-3&0\\
+s-3&V&V&0\\
+s-3&V&V&0\\
+0&0&0&0
+\end{pmatrix}.
+\]
+\end{theorem}
+\begin{proof}[Certificate]
+Since $V>0$, the displayed rank-one factorization proves $Q\succeq0$.
+Direct averaging over the root gives
+\[
+\begin{array}{c|ccccc}
+G&0&L&H&P&T\\\hline
+v^\top M(G)v&t^2/3&t^2/3&-2t/3&(1-t)/3&1
+\end{array}.
+\]
+Using $2t^2+2t-3=0$ and $V=2/(3+2t)$, the complete list of
+certificate values is
+\[
+\boxed{
+g(G)+\langle Q,M(G)\rangle=
+\begin{cases}
+V,&G\in\{0,L,H,T\},\\
+5V/6,&G=P.
+\end{cases}}
+\]
+Conditional independence of the two extensions implies that the
+expectation of the flag term is nonnegative. Consequently $\mathbb E g\le V$.
+\end{proof}
+
+\paragraph{The underlying sum-of-squares identity.}
+For an iid root $X$, define
+\[
+d(X)=\mathbb P(Y\sim X\mid X),\qquad
+\ell(X)=\mathbb P(Y<X,\ Y\not\sim X\mid X).
+\]
+The flag vector satisfies $v^\top h(X)=d(X)-t\ell(X)$.
+Thus the certificate is equivalently the exact identity
+\[
+\boxed{
+B-(p_H-p_T)
+=a\,\mathbb E[(d(X)-t\ell(X))^2]+\frac a6\,p_P.
+}
+\]
+This is a flag sum of squares plus a nonnegative pattern density.
+For finite weighted graphs, repeated copies of a vertex are adjacent;
+the same identity holds, since the two adjacent flags have equal
+coefficients and their relative order does not affect the score.
+
+\paragraph{How to find the matrix analytically.}
+The extremal construction consists of ordered disjoint cliques with masses,
+from top downward,
+\[
+q,\ q(1-q),\ q(1-q)^2,\ldots,
+\qquad q=\frac{4-\sqrt7}{3}.
+\]
+At a root in the $k$th clique, its neighbor mass is $q(1-q)^k$, and
+its lower nonneighbor mass is $(1-q)^{k+1}$. Their ratio is
+$q/(1-q)=t$. This suggests the vanishing flag combination $d-t\ell$
+and hence the rank-one direction $v$.
+
+Alternatively, start with $Q_J=a vv^\top$ for the objective $J=p_H-p_T$.
+Demand equal certificate values on $0,H,T$, all of which occur in the
+extremal construction:
+\[
+B=\frac{at^2}{3}=1-\frac{2at}{3}=a-1.
+\]
+These equations give $2t^2+2t-3=0$, its positive root
+$t=(\sqrt7-1)/2$, and $a=2\sqrt7-4$.
+The remaining pattern $L$ has the same value as $0$, while $P$ has
+positive slack $a/6$. Dividing the matrix by three gives $Q$ above.
+This constructs the optimal solution without numerical optimization.
+
+\paragraph{Sharpness.}
+For the geometric clique construction, $p_P=0$ and $d=t\ell$ almost
+surely, so the identity gives $p_H-p_T=B$ and $\mathbb E g=V$.
+This is also approached by finite weighted graphs. If the first $N$
+cliques retain the displayed masses and the remaining mass $(1-q)^N$
+is put in one bottom clique, the defect is
+\[
+B-(p_H-p_T)=a(1-q)^{3N}\longrightarrow0.
+\]
+Hence every valid flag SDP upper bound for this graph objective is at
+least $V$, and the displayed matrix is optimal.
+
+\paragraph{Application to the additive event.}
+Let $1<c\le\sqrt2$, choose $c\le r\le2/c$, and join positive values
+$x<y$ when $y<rx$. This graph has the interval property. For a sorted
+triple $x<y<z$, let
+\[
+\sigma=\mathbf1\{x+y<cz\}+\mathbf1\{x+z<cy\}.
+\]
+A middle win implies $z<cy\le ry$ and
+$x<(c-1)y\le y/r$, because $r(c-1)\le1$.
+It therefore requires type $H$. A triangle gives $x>z/r$ and
+$x+y>2z/r\ge cz$, so it has no wins. It follows that
+\[
+\sigma\le1+\mathbf1_H-\mathbf1_T.
+\]
+The actual additive objective is $\sigma/3$; the same matrix $Q$
+therefore certifies $S_2(c)\le V$. Retaining the additive labels refines
+the five graph patterns but does not change the matrix or the proof.
+Positive atomless perturbations extend the upper bound to arbitrary
+nonnegative laws, preserving strict winning events in the limit inferior.
+
+For the matching lower bound, put masses $q(1-q)^k$ at $\varepsilon^k$,
+where $0<\varepsilon<\min\{c/2,c-1,1/c,1/r\}$.
+Within the range $1<c\le\sqrt2$, three equal-scale draws never win;
+a largest-scale target wins against two lower-scale draws, and either
+of two largest-scale targets wins when the third draw is smaller.
+The success probability satisfies
+\[
+S=(1-q)^3S+q(1-q)^2+2q^2(1-q),
+\]
+whose solution is $S=V$. Thus the colored/additive three-point SDP itself
+is optimal for every $1<c\le\sqrt2$, and
+\[
+S_2(c)=\frac{2\sqrt7-4}{3}.
+\]
+The admissible interval $[c,2/c]$ for the ratio cutoff closes at $\sqrt2$.
+
+\paragraph{Exact verification.}
+Run
+\begin{verbatim}
+python3 graph_experiment/verify_first_plateau_flag.py
+\end{verbatim}
+The standard-library checker enumerates all five interval-graph patterns,
+checks the matrix entries and every score, and verifies the sharpness
+recurrences in the exact field generated by the root $a\in(1,2)$ of
+$a^2+8a-12=0$. The matrix entries lie in $\mathbb Q(\sqrt7)$; positive
+semidefiniteness follows from a positive algebraic scalar times a rank-one
+outer product. Its JSON output is \texttt{first\_plateau\_flag.json}.
+\end{document}

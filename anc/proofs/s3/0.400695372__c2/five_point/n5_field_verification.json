@@ -1,0 +1,39 @@
+{
+  "patterns": 307,
+  "excluded_prefixes": 1049,
+  "complete_cover_verified": true,
+  "blocks": 6,
+  "original_dimensions": [
+    15,
+    15,
+    15,
+    27,
+    19,
+    20
+  ],
+  "reduced_dimensions": [
+    7,
+    5,
+    6,
+    20,
+    18,
+    15
+  ],
+  "bound": [
+    "0",
+    "3/2",
+    "-3/2",
+    "1/4"
+  ],
+  "bound_decimal": 0.40069537232930136,
+  "tight_patterns": 33,
+  "margin_at_one": [
+    "8343/5000000",
+    "-25029/10000000",
+    "25029/10000000",
+    "-8343/20000000"
+  ],
+  "margin_at_one_decimal": 0.0009999997017313275,
+  "exact_algebraic_upper_verified": true,
+  "proves_equality": true
+}

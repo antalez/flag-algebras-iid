@@ -1,0 +1,34 @@
+{
+  "status": "AlmostSolved",
+  "primal": 0.3371722219537135,
+  "dual": 0.33717222195746777,
+  "minimum_raw_eigenvalue": 0.0,
+  "primal_residual": 3.373841086572402e-09,
+  "dual_residual": 2.8042418795546406e-11,
+  "seconds": 6.211179329,
+  "numerical_max_score": 0.33717222202328356,
+  "c": "8/5",
+  "n": 4,
+  "cuts": [
+    "5/4",
+    "8/5",
+    "5/3",
+    "15/8",
+    "8/3"
+  ],
+  "patterns": 869,
+  "exclusions": 5531,
+  "blocks": [
+    6,
+    12,
+    38,
+    32,
+    23,
+    23,
+    32,
+    29
+  ],
+  "bound": "20230333554041153/60000000000000000",
+  "upper_decimal": 0.3371722259006859,
+  "exact_checks_passed": true
+}

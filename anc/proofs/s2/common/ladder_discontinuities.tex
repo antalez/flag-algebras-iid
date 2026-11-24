@@ -1,0 +1,183 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\title{Colored four-point certificates at later ladder thresholds}
+\author{}\date{}\maketitle
+
+Let $S_2(c)=\sup\mathbb P(X_1+X_2<cX_3)$, with independent copies of
+an arbitrary nonnegative random variable. The paper's ladder thresholds are
+\[
+c_n^{n+1}=2+\sum_{k=1}^{n-1}c_n^k.
+\]
+Their locations are approximately
+\[
+c_4\approx1.5887905300,\quad
+c_5\approx1.6009326498,\quad
+c_6\approx1.6078359266.
+\]
+The paper already establishes a discontinuity at $c_4$; the method here
+provides a four-point certificate and a stronger endpoint upper bound.
+
+\paragraph{Exact results.}
+For each certified row below, the upper bound holds at the exact algebraic
+endpoint and the lower bound holds uniformly for every $c>c_n$.
+Consequently their positive difference proves a right-hand discontinuity.
+Decimals round upper bounds upward and lower bounds downward; exact
+fractions are recorded in \texttt{ladder\_discontinuities.json}.
+% BEGIN RESULTS
+\begin{center}
+\begin{tabular}{lrrr}\toprule
+Endpoint&Upper at endpoint&Uniform right lower&Jump greater than\\\midrule
+$c_4$&0.461445461011&0.462747996461&0.0013025354510\\
+$c_5$&0.463949048207&0.463950398691&0.0000013504847\\
+$c_6$&0.464718690571&0.464719509531&0.0000008189617\\
+\bottomrule\end{tabular}
+\end{center}
+% END RESULTS
+\begin{theorem}
+The points $c_4,c_5,c_6$ are right-hand discontinuities of $S_2$.
+The exact endpoint upper bounds are
+\[
+\begin{aligned}
+S_2(c_4)&\le\frac{1384336383031430617}{3000000000000000000},\\
+S_2(c_5)&\le\frac{347961786154762159}{750000000000000000},\\
+S_2(c_6)&\le\frac{1394156071710710507}{3000000000000000000}.
+\end{aligned}
+\]
+\end{theorem}
+The new $c_4$ upper improves the paper's $0.4626664$ upper bound.
+The discontinuities at $c_5,c_6$ extend the endpoints established there.
+
+\paragraph{The ratio coloring.}
+At each endpoint set
+\[
+r_0=1,\qquad r_{j+1}=\frac{1+r_j}{c},\qquad
+b_0=\frac4{c^2},\qquad b_{j+1}=\frac{1+b_j}{c}.
+\]
+For $c=c_n$, use the sorted cutoffs
+\[
+\left\{\frac{c+2}{2c},r_1,\ldots,r_n,b_0,\ldots,b_{n-4},c\right\}.
+\]
+Since $r_n=c$, there are $2n-2$ distinct cutoffs: six, eight, and ten
+for $n=4,5,6$. A pair $x<y$ is colored by the interval containing $y/x$.
+The pattern also records each additive triple comparison $x_i+x_j<cx_k$.
+Thus this is a colored-graph/additive formulation. The cutoffs come from
+the ladder and the branching comparison $2r_1/c=4/c^2$.
+
+\paragraph{Upper certificates.}
+Four sorted iid points determine a pattern. We use the flag families
+$(t,f)=(0,2),(1,2),(2,3)$, with the root type and root positions recorded.
+For each retained pattern $P$ the verifier checks
+\[
+\operatorname{obj}(P)+\sum_\sigma
+ \langle Q_\sigma,M_\sigma(P)\rangle\le U,
+\qquad Q_\sigma=L_\sigma L_\sigma^T/10^{18},
+\]
+where every entry of $L_\sigma$ is an integer.
+Conditional independence makes each flag contribution nonnegative in
+expectation, so the pointwise inequality implies $S_2(c_n)\le U$.
+For atomless laws, pair equalities and additive equalities have probability
+zero. Approximating an arbitrary law by positive atomless perturbations
+preserves each strictly successful triple in the limit and extends the
+bound to all nonnegative laws.
+
+The exact cover includes a complete binary partition of comparison-sign
+space into retained patterns and excluded prefixes. Every excluded prefix
+has a nonzero nonnegative linear combination of its strict inequalities
+whose coefficients in positive gap coordinates are nonnegative.
+These contradictions are checked in the exact algebraic field of $c_n$.
+The endpoint polynomial has one positive root, isolated by rational
+intervals; no floating-point sign decisions enter the verification.
+The flag scores, PSD factors, and final maxima are checked rationally.
+Solver convergence and residuals are not assumptions of the proof.
+\begin{center}
+\begin{tabular}{lrrrr}\toprule
+Endpoint&Cutoffs&Patterns&Excluded prefixes&Largest PSD block\\\midrule
+$c_4$&6&1971&18337&75\\
+$c_5$&8&4161&47973&113\\
+$c_6$&10&7541&103336&161\\
+\bottomrule\end{tabular}
+\end{center}
+
+\paragraph{Uniform lower constructions.}
+For $c_n<c<\varphi$, the recurrence satisfies $r_n<c$. Choose sufficiently
+small $\varepsilon>0$ and set
+\[
+a_0=1,\qquad a_{j+1}=\frac{1+a_j}{c}+\varepsilon
+\quad(0\le j<n).
+\]
+Then $1=a_0<a_1<\cdots<a_n<c$ and $1+a_i<ca_j$ whenever $i<j$.
+The additional selected comparisons $2a_1<ca_j$ for $j\ge4$ hold for
+sufficiently small $\varepsilon$, because
+\[
+r_4-\frac4{c^2}
+=\frac{(c-2)(c^2-c-1)}{c^4}>0\qquad(1<c<\varphi).
+\]
+For positive masses $p_0,\ldots,p_n$ summing to one, these disjoint classes
+of ordered successes give the within-scale lower probability
+\[
+B=p_0^2\sum_{j=1}^n p_j
++2p_0\sum_{1\le i<j\le n}p_i p_j
++p_1^2\sum_{j=4}^n p_j.
+\]
+Place mass $w$ on this block and mass $1-w$ on a recursively smaller copy.
+Since $a_n<c a_0$, sufficiently separated scales make all the selected
+mixed-scale comparisons strict. The guaranteed contributions are
+$w^3B$, $2w^2(1-w)$, $w(1-w)^2$, and the recursive term $(1-w)^3S$.
+Finite truncations approach the lower bound
+\[
+L(B,w)=\frac{1-(1-B)w^2}{3-3w+w^2}.
+\]
+The saved rational masses and $w$ therefore give a uniform lower for every
+$c\in(c_n,\varphi)$; monotonicity extends it to every $c>c_n$.
+The independent verifier recounts the selected ordered triples and
+recomputes $B$, $L$, and the positive jump using rational arithmetic.
+
+\paragraph{Reproduction.}
+The covers for $c_5$ and $c_6$ are stored with Git LFS.
+Before verification or reuse of these saved covers, run from the repository root:
+\begin{verbatim}
+git lfs install
+git lfs pull
+\end{verbatim}
+An unfetched LFS pointer is not proof data. The scripts detect this case
+and print these fetch instructions instead of attempting to parse it as JSON.
+
+For each certified endpoint, the proof artifacts are
+\begin{verbatim}
+ladderN_exact_cover.json
+ladderN_exact_certificate.json
+ladderN_lower.json
+\end{verbatim}
+Verification uses only the Python standard library:
+\begin{verbatim}
+python3 graph_experiment/verify_ladder_discontinuities.py
+\end{verbatim}
+Numerical search uses the existing pinned NumPy/SciPy/Clarabel environment.
+
+\texttt{family\_endpoint\_exact.py} accepts the endpoint arguments
+\texttt{ladder4}, \texttt{ladder5}, and \texttt{ladder6}, with an optional
+\texttt{--seconds} solver budget. Saved exact covers are reused.
+For the saved $c_5$ and $c_6$ searches, initialize the Gram factors with
+those of the nearby $\tau_2$ and $\tau_3$ certificates:
+\begin{verbatim}
+python graph_experiment/family_endpoint_exact.py ladder5 --enumerate-only
+python graph_experiment/family_endpoint_exact.py ladder6 --enumerate-only
+python graph_experiment/factor_family_search.py ladder5 \
+  --seed branch2_exact --relabel-seed --seconds 180
+python graph_experiment/factor_family_search.py ladder6 \
+  --seed branch3_exact --relabel-seed --seconds 300
+\end{verbatim}
+The formal flag codes are used as initial PSD matrix coordinates at the
+new endpoint. All target patterns are then rescored. The search stops
+when a separating candidate is found and checks its rational rounding
+exactly. This stopping rule explains the small reported margins; the
+certificates are not asserted optimal. Successful search files use the
+suffix \texttt{\_factor}; the verifier reads the saved copies with suffix
+\texttt{\_exact}.
+
+The fixed rational masses are sufficient for verification; their numerical
+search is implemented in \texttt{ladder\_bounds.py}.
+\end{document}

@@ -1,0 +1,974 @@
+{
+  "cases": [
+    {
+      "c": "47/20",
+      "c_decimal": 2.35,
+      "support_exact": [
+        "0",
+        "176720/227463",
+        "1"
+      ],
+      "support": [
+        0.0,
+        0.7769175646149044,
+        1.0
+      ],
+      "masses_exact": [
+        "188352998529/500000000000",
+        "543916392349/1000000000000",
+        "79377610593/1000000000000"
+      ],
+      "masses": [
+        0.376705997058,
+        0.543916392349,
+        0.079377610593
+      ],
+      "base_probability_exact": "481265321841889109786690752688021561310783574887/1000000000000000000000000000000000000000000000000",
+      "base_probability": 0.4812653218418891,
+      "recursive_probability_exact": "481265321841889109786690752688021561310783574887/979862287492434995863064795332015921064386027504",
+      "recursive_probability": 0.49115608181379744,
+      "above_half_exact": false,
+      "safe_scale_ratio_exact": "9729/3032840",
+      "safe_scale_ratio": 0.0032078843592144657,
+      "minimum_base_success_slack_exact": "29187/1516420",
+      "terms": [
+        {
+          "powers": [
+            0,
+            3,
+            1
+          ],
+          "coefficient": 1
+        },
+        {
+          "powers": [
+            1,
+            0,
+            3
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            1,
+            1,
+            2
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            1,
+            2,
+            1
+          ],
+          "coefficient": 9
+        },
+        {
+          "powers": [
+            1,
+            3,
+            0
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            2,
+            0,
+            2
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            2,
+            1,
+            1
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            2,
+            2,
+            0
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            3,
+            0,
+            1
+          ],
+          "coefficient": 1
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0
+          ],
+          "coefficient": 1
+        }
+      ],
+      "starts": 12,
+      "best_optimizer_success": true,
+      "trial_value_min": 0.4827817466286639,
+      "trial_value_max": 0.49115608181379744,
+      "interpretation": "Exact achieved lower bound from rational masses; mass optimization is local, not a global upper bound.",
+      "search": {
+        "previous_lower": 0.4911560818137974,
+        "fixed_support_baseline": 0.49115608181379744,
+        "insertion_cells": 23,
+        "cells_searched": 23,
+        "complete_cell_scan": true,
+        "seconds": 0.0623527129937429,
+        "interpretation": "Local mass optimization within each visited insertion cell; no optimality claim."
+      }
+    },
+    {
+      "c": "119/50",
+      "c_decimal": 2.38,
+      "support_exact": [
+        "0",
+        "40106784200/55027578049",
+        "50613141999/55027578049",
+        "1"
+      ],
+      "support": [
+        0.0,
+        0.7288487994926182,
+        0.9197777513291769,
+        1.0
+      ],
+      "masses_exact": [
+        "92950132911/250000000000",
+        "1331857779/2500000000",
+        "47728178829/1000000000000",
+        "47728177927/1000000000000"
+      ],
+      "masses": [
+        0.371800531644,
+        0.5327431116,
+        0.047728178829,
+        0.047728177927
+      ],
+      "base_probability_exact": "472090968240897690235925831914416390430179171/976562500000000000000000000000000000000000000",
+      "base_probability": 0.48342115147867926,
+      "recursive_probability_exact": "1888363872963590760943703327657665561720716684/3831605113768362689914700483160392733766765759",
+      "recursive_probability": 0.4928388539252144,
+      "above_half_exact": false,
+      "safe_scale_ratio_exact": "2315422627/5502757804900",
+      "safe_scale_ratio": 0.00042077494759776686,
+      "minimum_base_success_slack_exact": "6946267881/2751378902450",
+      "terms": [
+        {
+          "powers": [
+            0,
+            2,
+            1,
+            1
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            0,
+            3,
+            0,
+            1
+          ],
+          "coefficient": 1
+        },
+        {
+          "powers": [
+            0,
+            3,
+            1,
+            0
+          ],
+          "coefficient": 1
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            3
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            1,
+            0,
+            1,
+            2
+          ],
+          "coefficient": 9
+        },
+        {
+          "powers": [
+            1,
+            0,
+            2,
+            1
+          ],
+          "coefficient": 9
+        },
+        {
+          "powers": [
+            1,
+            0,
+            3,
+            0
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            2
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "coefficient": 12
+        },
+        {
+          "powers": [
+            1,
+            1,
+            2,
+            0
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0,
+            1
+          ],
+          "coefficient": 9
+        },
+        {
+          "powers": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "coefficient": 9
+        },
+        {
+          "powers": [
+            1,
+            3,
+            0,
+            0
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            2
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            2,
+            0,
+            1,
+            1
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            1
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            2,
+            1,
+            1,
+            0
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            2,
+            2,
+            0,
+            0
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            1
+          ],
+          "coefficient": 1
+        },
+        {
+          "powers": [
+            3,
+            0,
+            1,
+            0
+          ],
+          "coefficient": 1
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0,
+            0
+          ],
+          "coefficient": 1
+        }
+      ],
+      "starts": 12,
+      "best_optimizer_success": true,
+      "trial_value_min": 0.48278174662866347,
+      "trial_value_max": 0.4928388539252144,
+      "interpretation": "Exact achieved lower bound from rational masses; mass optimization is local, not a global upper bound.",
+      "search": {
+        "previous_lower": 0.49283885392521437,
+        "fixed_support_baseline": 0.4928388539252144,
+        "insertion_cells": 43,
+        "cells_searched": 43,
+        "complete_cell_scan": true,
+        "seconds": 0.14843298398773186,
+        "interpretation": "Local mass optimization within each visited insertion cell; no optimality claim."
+      }
+    },
+    {
+      "c": "12/5",
+      "c_decimal": 2.4,
+      "support_exact": [
+        "0",
+        "19906560/27832021",
+        "24890256/27832021",
+        "26966796/27832021",
+        "1"
+      ],
+      "support": [
+        0.0,
+        0.7152394718299473,
+        0.8943028607229062,
+        0.9689126060949724,
+        1.0
+      ],
+      "masses_exact": [
+        "369707671738/999999999999",
+        "528297681082/999999999999",
+        "33998210398/999999999999",
+        "33998221480/999999999999",
+        "33998215301/999999999999"
+      ],
+      "masses": [
+        0.3697076717383697,
+        0.5282976810825283,
+        0.033998210398033996,
+        0.033998221480034,
+        0.033998215301034
+      ],
+      "base_probability_exact": "161438941204607659350868075106977547999231093066/333333333332000000000001999999999998666666666667",
+      "base_probability": 0.48431682361576023,
+      "recursive_probability_exact": "484316823613822978052604225320932643997693279198/981317549053380537853384546122198222276444865265",
+      "recursive_probability": 0.4935373102019983,
+      "above_half_exact": false,
+      "safe_scale_ratio_exact": "2016/19880015",
+      "safe_scale_ratio": 0.00010140837418885247,
+      "minimum_base_success_slack_exact": "12096/19880015",
+      "terms": [
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            1,
+            1
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            0,
+            2,
+            1,
+            0,
+            1
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            0,
+            2,
+            1,
+            1,
+            0
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            0,
+            3,
+            0,
+            0,
+            1
+          ],
+          "coefficient": 1
+        },
+        {
+          "powers": [
+            0,
+            3,
+            0,
+            1,
+            0
+          ],
+          "coefficient": 1
+        },
+        {
+          "powers": [
+            0,
+            3,
+            1,
+            0,
+            0
+          ],
+          "coefficient": 1
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            3
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            1,
+            2
+          ],
+          "coefficient": 9
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            2,
+            1
+          ],
+          "coefficient": 9
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            0
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            1,
+            0,
+            1,
+            0,
+            2
+          ],
+          "coefficient": 9
+        },
+        {
+          "powers": [
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "coefficient": 18
+        },
+        {
+          "powers": [
+            1,
+            0,
+            1,
+            2,
+            0
+          ],
+          "coefficient": 9
+        },
+        {
+          "powers": [
+            1,
+            0,
+            2,
+            0,
+            1
+          ],
+          "coefficient": 9
+        },
+        {
+          "powers": [
+            1,
+            0,
+            2,
+            1,
+            0
+          ],
+          "coefficient": 9
+        },
+        {
+          "powers": [
+            1,
+            0,
+            3,
+            0,
+            0
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            2
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "coefficient": 12
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            2,
+            0
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "coefficient": 12
+        },
+        {
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "coefficient": 12
+        },
+        {
+          "powers": [
+            1,
+            1,
+            2,
+            0,
+            0
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0,
+            0,
+            1
+          ],
+          "coefficient": 9
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0,
+            1,
+            0
+          ],
+          "coefficient": 9
+        },
+        {
+          "powers": [
+            1,
+            2,
+            1,
+            0,
+            0
+          ],
+          "coefficient": 9
+        },
+        {
+          "powers": [
+            1,
+            3,
+            0,
+            0,
+            0
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            2
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            1,
+            1
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            2,
+            0
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            2,
+            0,
+            1,
+            0,
+            1
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            2,
+            0,
+            1,
+            1,
+            0
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            2,
+            0,
+            2,
+            0,
+            0
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            0,
+            1
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            1,
+            0
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": 1
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": 1
+        },
+        {
+          "powers": [
+            3,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": 1
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": 1
+        }
+      ],
+      "starts": 12,
+      "best_optimizer_success": true,
+      "trial_value_min": 0.4827817466286538,
+      "trial_value_max": 0.4935373102019983,
+      "interpretation": "Exact achieved lower bound from rational masses; mass optimization is local, not a global upper bound.",
+      "search": {
+        "previous_lower": 0.49353731020199826,
+        "fixed_support_baseline": 0.4935373102019983,
+        "insertion_cells": 73,
+        "cells_searched": 73,
+        "complete_cell_scan": true,
+        "seconds": 0.3590715419850312,
+        "interpretation": "Local mass optimization within each visited insertion cell; no optimality claim."
+      }
+    },
+    {
+      "c": "121/50",
+      "c_decimal": 2.42,
+      "support_exact": [
+        "0",
+        "10041/14200",
+        "1"
+      ],
+      "support": [
+        0.0,
+        0.707112676056338,
+        1.0
+      ],
+      "masses_exact": [
+        "67917731461/200000000000",
+        "240538814997/500000000000",
+        "179333712701/1000000000000"
+      ],
+      "masses": [
+        0.339588657305,
+        0.481077629994,
+        0.179333712701
+      ],
+      "base_probability_exact": "496724494993727441661857297483549384321594856757/1000000000000000000000000000000000000000000000000",
+      "base_probability": 0.49672449499372745,
+      "recursive_probability_exact": "38209576537979033973989022883349952640122681289/75900091722207234209339223501059759797287526875",
+      "recursive_probability": 0.5034193723747435,
+      "above_half_exact": true,
+      "safe_scale_ratio_exact": "41/60000",
+      "safe_scale_ratio": 0.0006833333333333333,
+      "minimum_base_success_slack_exact": "41/10000",
+      "terms": [
+        {
+          "powers": [
+            0,
+            2,
+            2
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            0,
+            3,
+            1
+          ],
+          "coefficient": 1
+        },
+        {
+          "powers": [
+            1,
+            0,
+            3
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            1,
+            1,
+            2
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            1,
+            2,
+            1
+          ],
+          "coefficient": 9
+        },
+        {
+          "powers": [
+            1,
+            3,
+            0
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            2,
+            0,
+            2
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            2,
+            1,
+            1
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers": [
+            2,
+            2,
+            0
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers": [
+            3,
+            0,
+            1
+          ],
+          "coefficient": 1
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0
+          ],
+          "coefficient": 1
+        }
+      ],
+      "starts": 12,
+      "best_optimizer_success": true,
+      "trial_value_min": 0.482781746628665,
+      "trial_value_max": 0.5034193723747435,
+      "interpretation": "Exact achieved lower bound from rational masses; mass optimization is local, not a global upper bound.",
+      "search": {
+        "previous_lower": 0.5032292077172523,
+        "fixed_support_baseline": 0.5034193723747435,
+        "insertion_cells": 24,
+        "cells_searched": 24,
+        "complete_cell_scan": true,
+        "seconds": 0.060615927999606356,
+        "interpretation": "Local mass optimization within each visited insertion cell; no optimality claim."
+      }
+    }
+  ]
+}

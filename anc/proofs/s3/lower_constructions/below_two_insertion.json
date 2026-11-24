@@ -1,0 +1,528 @@
+{
+  "cases": [
+    {
+      "c": "3/2",
+      "ladders": [
+        {
+          "c": "3/2",
+          "support_exact": [
+            "0",
+            "1"
+          ],
+          "masses_exact": [
+            "356964671433/500000000000",
+            "143035328567/500000000000"
+          ],
+          "safe_scale_ratio_exact": "1/12",
+          "recursive_probability_exact": "100164091846759576801629232512920526/323438842748957269441046633743539737",
+          "recursive_probability": 0.30968479541742516,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 1
+        }
+      ],
+      "insertion_cells": 5,
+      "best": {
+        "c": "3/2",
+        "support_exact": [
+          "0",
+          "17/24",
+          "1"
+        ],
+        "masses_exact": [
+          "167100120583/250000000000",
+          "110532905829/500000000000",
+          "11053370601/100000000000"
+        ],
+        "safe_scale_ratio_exact": "1/96",
+        "recursive_probability_exact": "893147676348180863109491612255118537117847409/2779188239384956602833178080624988915144629048",
+        "recursive_probability": 0.3213699826773293,
+        "interpretation": "Verified achieved lower bound; mass optimization is local."
+      }
+    },
+    {
+      "c": "7/4",
+      "ladders": [
+        {
+          "c": "7/4",
+          "support_exact": [
+            "0",
+            "1"
+          ],
+          "masses_exact": [
+            "356964671433/500000000000",
+            "143035328567/500000000000"
+          ],
+          "safe_scale_ratio_exact": "1/8",
+          "recursive_probability_exact": "100164091846759576801629232512920526/323438842748957269441046633743539737",
+          "recursive_probability": 0.30968479541742516,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 1
+        },
+        {
+          "c": "7/4",
+          "support_exact": [
+            "0",
+            "7/11",
+            "1"
+          ],
+          "masses_exact": [
+            "578953288006/1000000000001",
+            "177955278740/1000000000001",
+            "243091433255/1000000000001"
+          ],
+          "safe_scale_ratio_exact": "5/264",
+          "recursive_probability_exact": "61974761387689553185228737521373537920071132724/177529947114896912257456758066509875298491033341",
+          "recursive_probability": 0.34909468737451743,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 2
+        }
+      ],
+      "insertion_cells": 17,
+      "best": {
+        "c": "7/4",
+        "support_exact": [
+          "0",
+          "7/11",
+          "65/88",
+          "1"
+        ],
+        "masses_exact": [
+          "574039351061/1000000000001",
+          "127543582666/1000000000001",
+          "63771867481/1000000000001",
+          "234645198793/1000000000001"
+        ],
+        "safe_scale_ratio_exact": "1/528",
+        "recursive_probability_exact": "104265998468654904281616866168786953057299824699/297138598066069040875949920946513986212914276720",
+        "recursive_probability": 0.35090021675834676,
+        "interpretation": "Verified achieved lower bound; mass optimization is local."
+      }
+    },
+    {
+      "c": "37/20",
+      "ladders": [
+        {
+          "c": "37/20",
+          "support_exact": [
+            "0",
+            "1"
+          ],
+          "masses_exact": [
+            "356964671433/500000000000",
+            "143035328567/500000000000"
+          ],
+          "safe_scale_ratio_exact": "17/120",
+          "recursive_probability_exact": "100164091846759576801629232512920526/323438842748957269441046633743539737",
+          "recursive_probability": 0.30968479541742516,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 1
+        },
+        {
+          "c": "37/20",
+          "support_exact": [
+            "0",
+            "37/57",
+            "1"
+          ],
+          "masses_exact": [
+            "578953288006/1000000000001",
+            "177955278740/1000000000001",
+            "243091433255/1000000000001"
+          ],
+          "safe_scale_ratio_exact": "229/6840",
+          "recursive_probability_exact": "61974761387689553185228737521373537920071132724/177529947114896912257456758066509875298491033341",
+          "recursive_probability": 0.34909468737451743,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 2
+        },
+        {
+          "c": "37/20",
+          "support_exact": [
+            "0",
+            "1369/2509",
+            "2109/2509",
+            "1"
+          ],
+          "masses_exact": [
+            "133729006699/250000000000",
+            "126831283011/1000000000000",
+            "141880377801/1000000000000",
+            "24546539049/125000000000"
+          ],
+          "safe_scale_ratio_exact": "473/301080",
+          "recursive_probability_exact": "28039224284967876396991712695612196780173444271/76510556054937434904759009683780662058638651712",
+          "recursive_probability": 0.3664752385910601,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 3
+        }
+      ],
+      "insertion_cells": 35,
+      "best": {
+        "c": "37/20",
+        "support_exact": [
+          "0",
+          "25419/200720",
+          "1369/2509",
+          "2109/2509",
+          "1"
+        ],
+        "masses_exact": [
+          "534916010072/999999999999",
+          "0",
+          "18118754644/142857142857",
+          "47293462091/333333333333",
+          "21819146794/111111111111"
+        ],
+        "safe_scale_ratio_exact": "473/301080",
+        "recursive_probability_exact": "336470695170483799462952374360479261198285845648/918126682894235479443397554181898310285971206145",
+        "recursive_probability": 0.3664752385910604,
+        "interpretation": "Verified achieved lower bound; mass optimization is local."
+      }
+    },
+    {
+      "c": "19/10",
+      "ladders": [
+        {
+          "c": "19/10",
+          "support_exact": [
+            "0",
+            "1"
+          ],
+          "masses_exact": [
+            "356964671433/500000000000",
+            "143035328567/500000000000"
+          ],
+          "safe_scale_ratio_exact": "3/20",
+          "recursive_probability_exact": "100164091846759576801629232512920526/323438842748957269441046633743539737",
+          "recursive_probability": 0.30968479541742516,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 1
+        },
+        {
+          "c": "19/10",
+          "support_exact": [
+            "0",
+            "19/29",
+            "1"
+          ],
+          "masses_exact": [
+            "578953288006/1000000000001",
+            "177955278740/1000000000001",
+            "243091433255/1000000000001"
+          ],
+          "safe_scale_ratio_exact": "71/1740",
+          "recursive_probability_exact": "61974761387689553185228737521373537920071132724/177529947114896912257456758066509875298491033341",
+          "recursive_probability": 0.34909468737451743,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 2
+        },
+        {
+          "c": "19/10",
+          "support_exact": [
+            "0",
+            "361/651",
+            "551/651",
+            "1"
+          ],
+          "masses_exact": [
+            "133729006699/250000000000",
+            "126831283011/1000000000000",
+            "141880377801/1000000000000",
+            "24546539049/125000000000"
+          ],
+          "safe_scale_ratio_exact": "349/39060",
+          "recursive_probability_exact": "28039224284967876396991712695612196780173444271/76510556054937434904759009683780662058638651712",
+          "recursive_probability": 0.3664752385910601,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 3
+        }
+      ],
+      "insertion_cells": 35,
+      "best": {
+        "c": "19/10",
+        "support_exact": [
+          "0",
+          "260521/494760",
+          "361/651",
+          "551/651",
+          "1"
+        ],
+        "masses_exact": [
+          "525788554333/1000000000000",
+          "131280482811/1000000000000",
+          "228702549/20000000000",
+          "5658732697/40000000000",
+          "190027517981/1000000000000"
+        ],
+        "safe_scale_ratio_exact": "121/1562400",
+        "recursive_probability_exact": "113443504699728425821856039769647161233290824620/307857801636207929186933848450972013719012545893",
+        "recursive_probability": 0.36849319425006266,
+        "interpretation": "Verified achieved lower bound; mass optimization is local."
+      }
+    },
+    {
+      "c": "39/20",
+      "ladders": [
+        {
+          "c": "39/20",
+          "support_exact": [
+            "0",
+            "1"
+          ],
+          "masses_exact": [
+            "356964671433/500000000000",
+            "143035328567/500000000000"
+          ],
+          "safe_scale_ratio_exact": "19/120",
+          "recursive_probability_exact": "100164091846759576801629232512920526/323438842748957269441046633743539737",
+          "recursive_probability": 0.30968479541742516,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 1
+        },
+        {
+          "c": "39/20",
+          "support_exact": [
+            "0",
+            "39/59",
+            "1"
+          ],
+          "masses_exact": [
+            "578953288006/1000000000001",
+            "177955278740/1000000000001",
+            "243091433255/1000000000001"
+          ],
+          "safe_scale_ratio_exact": "341/7080",
+          "recursive_probability_exact": "61974761387689553185228737521373537920071132724/177529947114896912257456758066509875298491033341",
+          "recursive_probability": 0.34909468737451743,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 2
+        },
+        {
+          "c": "39/20",
+          "support_exact": [
+            "0",
+            "1521/2701",
+            "2301/2701",
+            "1"
+          ],
+          "masses_exact": [
+            "133729006699/250000000000",
+            "126831283011/1000000000000",
+            "141880377801/1000000000000",
+            "24546539049/125000000000"
+          ],
+          "safe_scale_ratio_exact": "5299/324120",
+          "recursive_probability_exact": "28039224284967876396991712695612196780173444271/76510556054937434904759009683780662058638651712",
+          "recursive_probability": 0.3664752385910601,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 3
+        },
+        {
+          "c": "39/20",
+          "support_exact": [
+            "0",
+            "59319/113339",
+            "1521/1921",
+            "105339/113339",
+            "1"
+          ],
+          "masses_exact": [
+            "257431884209/500000000000",
+            "50532209997/500000000000",
+            "20541562831/200000000000",
+            "58420741007/500000000000",
+            "164522515419/1000000000000"
+          ],
+          "safe_scale_ratio_exact": "46661/13600680",
+          "recursive_probability_exact": "58207398816172772230401848518397200896659829597/154955016968370917223770623565050923286327003304",
+          "recursive_probability": 0.37564062109750174,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 4
+        }
+      ],
+      "insertion_cells": 61,
+      "best": {
+        "c": "39/20",
+        "support_exact": [
+          "0",
+          "59319/113339",
+          "1521/1921",
+          "105339/113339",
+          "4290641/4533560",
+          "1"
+        ],
+        "masses_exact": [
+          "512988279390/1000000000001",
+          "104812528511/1000000000001",
+          "103741026875/1000000000001",
+          "0",
+          "117690637566/1000000000001",
+          "160767527659/1000000000001"
+        ],
+        "safe_scale_ratio_exact": "16241/27201360",
+        "recursive_probability_exact": "350011614406548487140410665900600094384719645970/930748406622579149990634944431706891152261590001",
+        "recursive_probability": 0.3760539496131301,
+        "interpretation": "Verified achieved lower bound; mass optimization is local."
+      }
+    },
+    {
+      "c": "199/100",
+      "ladders": [
+        {
+          "c": "199/100",
+          "support_exact": [
+            "0",
+            "1"
+          ],
+          "masses_exact": [
+            "356964671433/500000000000",
+            "143035328567/500000000000"
+          ],
+          "safe_scale_ratio_exact": "33/200",
+          "recursive_probability_exact": "100164091846759576801629232512920526/323438842748957269441046633743539737",
+          "recursive_probability": 0.30968479541742516,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 1
+        },
+        {
+          "c": "199/100",
+          "support_exact": [
+            "0",
+            "199/299",
+            "1"
+          ],
+          "masses_exact": [
+            "578953288006/1000000000001",
+            "177955278740/1000000000001",
+            "243091433255/1000000000001"
+          ],
+          "safe_scale_ratio_exact": "9701/179400",
+          "recursive_probability_exact": "61974761387689553185228737521373537920071132724/177529947114896912257456758066509875298491033341",
+          "recursive_probability": 0.34909468737451743,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 2
+        },
+        {
+          "c": "199/100",
+          "support_exact": [
+            "0",
+            "39601/69501",
+            "59501/69501",
+            "1"
+          ],
+          "masses_exact": [
+            "133729006699/250000000000",
+            "126831283011/1000000000000",
+            "141880377801/1000000000000",
+            "24546539049/125000000000"
+          ],
+          "safe_scale_ratio_exact": "930499/41700600",
+          "recursive_probability_exact": "28039224284967876396991712695612196780173444271/76510556054937434904759009683780662058638651712",
+          "recursive_probability": 0.3664752385910601,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 3
+        },
+        {
+          "c": "199/100",
+          "support_exact": [
+            "0",
+            "7880599/14830699",
+            "39601/49601",
+            "13830699/14830699",
+            "1"
+          ],
+          "masses_exact": [
+            "257431884209/500000000000",
+            "50532209997/500000000000",
+            "20541562831/200000000000",
+            "58420741007/500000000000",
+            "164522515419/1000000000000"
+          ],
+          "safe_scale_ratio_exact": "28389767/2966139800",
+          "recursive_probability_exact": "58207398816172772230401848518397200896659829597/154955016968370917223770623565050923286327003304",
+          "recursive_probability": 0.37564062109750174,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 4
+        },
+        {
+          "c": "199/100",
+          "support_exact": [
+            "0",
+            "1568239201/3051309101",
+            "2356299101/3051309101",
+            "2752309101/3051309101",
+            "2951309101/3051309101",
+            "1"
+          ],
+          "masses_exact": [
+            "504556834747/1000000000000",
+            "85242938581/1000000000000",
+            "79488729761/1000000000000",
+            "87453972657/1000000000000",
+            "50662990793/500000000000",
+            "35482885667/250000000000"
+          ],
+          "safe_scale_ratio_exact": "6948690899/1830785460600",
+          "recursive_probability_exact": "118762758113524845886314623115814159666180489534/311730081945984743001403308283372706986228675973",
+          "recursive_probability": 0.38097945944820155,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 5
+        },
+        {
+          "c": "199/100",
+          "support_exact": [
+            "0",
+            "312079600999/617210511099",
+            "1568239201/2064249201",
+            "7880599/8880599",
+            "1964249201/2064249201",
+            "607210511099/617210511099",
+            "1"
+          ],
+          "masses_exact": [
+            "124604059599/250000000000",
+            "74360878229/1000000000000",
+            "32338760087/500000000000",
+            "6964072873/100000000000",
+            "38720859597/500000000000",
+            "89919545203/1000000000000",
+            "62771685037/500000000000"
+          ],
+          "safe_scale_ratio_exact": "382789488901/370326306659400",
+          "recursive_probability_exact": "360715328089685225484414591061453244997963787601/938288126289582024651047218123303307685703270144",
+          "recursive_probability": 0.384439830349466,
+          "interpretation": "Verified achieved lower bound; mass optimization is local.",
+          "ladder_positive_atoms": 6
+        }
+      ],
+      "insertion_cells": 145,
+      "best": {
+        "c": "199/100",
+        "support_exact": [
+          "0",
+          "24702874501141399/49129956683480400",
+          "312079600999/617210511099",
+          "1568239201/2064249201",
+          "7880599/8880599",
+          "1964249201/2064249201",
+          "607210511099/617210511099",
+          "1"
+        ],
+        "masses_exact": [
+          "495600898377/1000000000000",
+          "10440729979/125000000000",
+          "0",
+          "12657080411/200000000000",
+          "68778177519/1000000000000",
+          "76772868657/1000000000000",
+          "22556050423/250000000000",
+          "30453152967/250000000000"
+        ],
+        "safe_scale_ratio_exact": "14454057181399/148130522663760000",
+        "recursive_probability_exact": "361797916803471091449042626821482971461850214463/939670692558028026970937374683590962751085611359",
+        "recursive_probability": 0.3850262859838302,
+        "interpretation": "Verified achieved lower bound; mass optimization is local."
+      }
+    }
+  ]
+}

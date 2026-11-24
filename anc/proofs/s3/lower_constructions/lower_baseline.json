@@ -1,0 +1,56 @@
+{
+  "c": "23/10",
+  "c_decimal": 2.3,
+  "support_exact": [
+    "0",
+    "1"
+  ],
+  "support": [
+    0.0,
+    1.0
+  ],
+  "masses_exact": [
+    "24773747247/62500000000",
+    "37726252753/62500000000"
+  ],
+  "masses": [
+    0.396379955952,
+    0.603620044048
+  ],
+  "base_probability_exact": "7184813015301004865178153048005975437577919/15258789062500000000000000000000000000000000",
+  "base_probability": 0.47086390577076664,
+  "recursive_probability_exact": "190445975706656074875026776238223/394476338504028594627276776238223",
+  "recursive_probability": 0.4827817466286667,
+  "above_half_exact": false,
+  "safe_scale_ratio_exact": "1/20",
+  "safe_scale_ratio": 0.05,
+  "minimum_base_success_slack_exact": "3/10",
+  "terms": [
+    {
+      "powers": [
+        1,
+        3
+      ],
+      "coefficient": 3
+    },
+    {
+      "powers": [
+        2,
+        2
+      ],
+      "coefficient": 3
+    },
+    {
+      "powers": [
+        3,
+        1
+      ],
+      "coefficient": 1
+    }
+  ],
+  "starts": 8,
+  "best_optimizer_success": true,
+  "trial_value_min": 0.48278174662862045,
+  "trial_value_max": 0.4827817466286667,
+  "interpretation": "Exact achieved lower bound from rational masses; mass optimization is local, not a global upper bound."
+}

@@ -1,0 +1,49 @@
+{
+  "threshold": "Golden ratio phi, unique positive root of c^2-c-1",
+  "polynomial": [
+    -1,
+    -1,
+    1
+  ],
+  "upper_at_phi_exact": "846522430902936932843/1800000000000000000000",
+  "upper_at_phi": 0.4702902393905205,
+  "uniform_right_lower_exact": "60726069963935855546333860589917329/120704158314985141717385848649808136",
+  "uniform_right_lower": 0.5030984086353292,
+  "right_jump_lower_exact": "891018552273796239072066033473665771459893609966623669/27158435620871656886411815946206830600000000000000000000",
+  "right_jump_lower": 0.032808169244808616,
+  "right_discontinuity_proved": true,
+  "endpoint_coverage": {
+    "exact_endpoint_cover": true,
+    "six_exclusions": 17907,
+    "seven_exclusions": 0,
+    "rays": 12118
+  },
+  "six_rows": 2714,
+  "gram_bound_independently_verified": true,
+  "uniform_right_law_exactly_verified": true,
+  "uniform_right_lower_bound": {
+    "statement": "S2(c) >= value_exact for every c > phi",
+    "root_polynomial": "c^2-c-1",
+    "root_bracket": [
+      "1618023988749/1000000000000",
+      "1618043988749/1000000000000"
+    ],
+    "support_formula": "[0, (1/c+c-1)/2, 1]",
+    "masses_exact": [
+      "81280448927/250000000000",
+      "142618545687/500000000000",
+      "194820556459/500000000000"
+    ],
+    "selected_ordered_successes": 13,
+    "base_exact": "60726069963935855546333860589917329/125000000000000000000000000000000000",
+    "value_exact": "60726069963935855546333860589917329/120704158314985141717385848649808136",
+    "decimal": 0.5030984086353292,
+    "exact_checked": true
+  },
+  "proof_files": {
+    "cover6": "two_against_one/results/sdp6_phi_clean/c1618023988749_1000000000000/cover.json",
+    "endpoint": "two_against_one/results/phi_endpoint_cover.json",
+    "upper": "two_against_one/results/sdp6_phi_refinement/certificate.json",
+    "lower": "two_against_one/results/phi_cplus_witness.json"
+  }
+}

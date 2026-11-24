@@ -1,0 +1,330 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\begin{document}
+\title{Further discontinuities from four-point ratio-graph certificates}
+\author{}\date{}\maketitle
+
+\paragraph{Endpoints.}
+We consider the next intermediate threshold after $\alpha_2$,
+\[
+\alpha_3^5-\alpha_3^4-\alpha_3^2-\alpha_3-2=0,
+\qquad \alpha_3=1.739234341260724\ldots,
+\]
+and further members of a branching family beginning at $\sqrt[3]4$,
+\[
+\tau_1^4-\tau_1^2-4=0,\qquad
+\tau_1=\sqrt{\frac{1+\sqrt{17}}2}=1.600485180440241\ldots.
+\]
+The next two are defined by
+\[
+\tau_2^5=\tau_2^3+\tau_2^2+4,\qquad
+\tau_3^6=\tau_3^4+\tau_3^3+\tau_3^2+4.
+\]
+Each is the unique positive root of its polynomial. Exact fractions and
+the final jump comparisons are recorded in \texttt{family\_discontinuities.json}.
+
+\begin{theorem}
+The exact upper certificates give
+\[
+S_2(\alpha_3)\le\frac{3050935043544191377}{6000000000000000000},
+\qquad
+S_2(\tau_1)\le\frac{347114271361950569}{750000000000000000}.
+\]
+Together with the uniform right-side constructions below, these prove
+right-hand discontinuities at these exact algebraic endpoints:
+\[
+S_2(\alpha_3+)-S_2(\alpha_3)>0.0005649589651,
+\qquad
+S_2(\tau_1+)-S_2(\tau_1)>0.0004019739059.
+\]
+The same method also proves discontinuities at $\tau_2$ and $\tau_3$:
+\[
+S_2(\tau_2+)-S_2(\tau_2)>0.0002286755200,\qquad
+S_2(\tau_3+)-S_2(\tau_3)>0.0001522007113.
+\]
+Their exact fractions and constructions are given below.
+\end{theorem}
+The following decimals round upper bounds upward and lower bounds downward:
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+endpoint&upper at endpoint&uniform right lower&jump lower\\\midrule
+$\alpha_3$&0.508489173925&0.509054132889&0.0005649589651\\
+$\tau_1$&0.462819028483&0.463221002388&0.0004019739059\\
+$\tau_2$&0.464038146566&0.464266822085&0.0002286755200\\
+$\tau_3$&0.464794534376&0.464946735086&0.0001522007113\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{Upper certificates.}
+All certificates use four iid points, pairwise ratio colors, and the
+additive triple labels recording the winning event exactly. For $x<y$,
+the color of the pair is the interval containing $y/x$. At $c=\alpha_3$
+the six cutoffs are
+\[
+\frac{c^2+c+2}{c(c+2)},\quad
+\frac{c+2}{2c},\quad \frac2c,\quad
+\frac{c+2}{c^2},\quad\frac1{c-1},\quad c.
+\]
+They are ratios suggested by the intermediate ladder. At $c=\tau_1$
+the cutoffs are
+\[
+\frac{c+2}{2c},\quad\frac2c,\quad\frac{c+2}{c^2},\quad
+\frac{c^2+c+2}{c^3},\quad\frac4{c^2},\quad c.
+\]
+These combine the original ladder thresholds with the branching threshold
+$4/c^2$. The listed cutoffs are in increasing order at their endpoints.
+
+The flag families are $(t,f)=(0,2),(1,2),(2,3)$. There are seven pair
+colors, so the last family has seven root types. The exact cover sizes
+and PSD block dimensions are
+\[
+\begin{array}{c|r|r|l}
+&\text{patterns}&\text{excluded prefixes}&\text{block dimensions}\\\hline
+\alpha_3&1995&18611&7,14,47,55,42,40,40,32,32\\
+\tau_1&1974&18336&7,14,72,33,30,33,38,35,47.
+\end{array}
+\]
+
+For every excluded prefix, the cover stores a nonnegative nonzero
+combination of the prescribed strict linear inequalities whose coefficient
+vector in positive gap coordinates is nonnegative. All these contradictions
+are checked in the exact algebraic field of the endpoint. Field elements
+are coefficient vectors modulo the monic endpoint polynomial; signs use
+rational isolation of its unique positive root. The full binary partition
+of retained patterns and excluded prefixes is checked independently.
+
+For each retained pattern $P$, the verifier evaluates
+\[
+\operatorname{obj}(P)+\sum_\sigma\langle Q_\sigma,M_\sigma(P)\rangle,
+\qquad Q_\sigma=L_\sigma L_\sigma^T/10^{18},
+\]
+with integer $L_\sigma$. Its exact maximum is the upper bound. Conditional
+independence makes each flag term nonnegative in expectation; thus the
+bound holds for all iid laws. Atomless approximation transfers the result
+to arbitrary nonnegative laws, as in the earlier cube-root certificate.
+The proof does not rely on numerical feasibility or solver convergence.
+
+\paragraph{Uniform lower family at $\alpha_3$.}
+We use the existing repository construction with masses on
+$0,a_0,a_1,a_2,a_3,1$. For $\alpha_3<c<2$ set
+\[
+r_0=u_0=1/c,\quad r_{j+1}=(r_0+r_j)/c,\quad
+u_{j+1}=(u_0+u_j+1)/c,\quad
+\delta=\frac{c-1-r_3}{2u_3},\quad a_j=r_j+\delta u_j.
+\]
+Then $\delta>0$, $ca_0=1+\delta$,
+$ca_{j+1}=a_0+a_j+\delta$, and
+$a_3=(c-1+r_3)/2<c-1$. These imply all selected successes uniformly.
+The six exact masses are
+\[
+\frac{(309618399286,175410569272,48113766390,
+48113766390,48113766390,370629732273)}{1000000000001}.
+\]
+Count the following disjoint classes of ordered successes: positive
+target with at least one zero summand; target $1$ with two positive
+summands, at least one smaller than $1$; and an intermediate target
+$a_k$ with summands $a_0,a_j$, $j<k$. Recursive zero replacement gives
+the exact uniform bound
+\[
+L_\alpha=
+\frac{493944836144780432326982586906209328}
+{970318880118646973873431854824794345}
+=0.5090541328891619\ldots\qquad(c>\alpha_3).
+\]
+The masses and selected-event polynomial come from the repository's
+\texttt{multinacci\_families.json}; the new contribution is the separating
+endpoint upper certificate.
+
+\paragraph{Uniform lower family at $\tau_1$.}
+For $\tau_1<c<\varphi$ start from the limiting locations
+\[
+1,\quad \frac2c,\quad \frac{c+2}{c^2},\quad
+\frac4{c^2},\quad \frac{c^2+4}{c^3}.
+\]
+They are strictly ordered and the last is below $c$. To make all
+needed comparisons strict, take sufficiently small $\varepsilon>0$ and set
+\[
+x_0=1,\quad x_1=2/c+\varepsilon,\quad
+x_2=(1+x_1)/c+\varepsilon,\quad
+x_3=2x_1/c+\varepsilon,\quad
+x_4=(1+x_3)/c+\varepsilon.
+\]
+The ordering and $x_4<c$ persist by continuity. The only required
+comparison not immediate from the recursion, $1+x_2<cx_3$, has limiting
+slack $(2-c)(c-1)/c^2>0$. Thus $x_0+x_i<cx_j$ for $i<j$ and also
+$2x_1<cx_j$ for $j=3,4$.
+
+Take positive masses
+\[
+(p_0,p_1,p_2,p_3,p_4)
+=(515633,163083,89902,115691,115691)/10^6.
+\]
+The selected within-scale probability is
+\[
+B=p_0^2\sum_{j=1}^4p_j
++2p_0\sum_{1\le i<j\le4}p_i p_j+p_1^2(p_3+p_4)
+=\frac{224225230418916583}{10^{18}}.
+\]
+Recursive scale replacement with $w=560802159/10^9$ gives
+\[
+L_\tau=\frac{1-(1-B)w^2}{3-3w+w^2}
+=\frac{756019563001067760932969902864122823}
+{1632092584539061281000000000000000000}
+=0.463221002388528\ldots.
+\]
+Monotonicity extends the bound from $(\tau_1,\varphi)$ to every
+$c>\tau_1$.
+
+\begin{proposition}[The branching family]
+Define $b_0=4/c^2$ and $b_{j+1}=(1+b_j)/c$. The condition $b_j<c$
+opens at the unique positive root $\tau_j$ of
+\[
+\boxed{\tau_j^{j+3}=4+\sum_{k=2}^{j+1}\tau_j^k},\qquad j\ge0.
+\]
+The empty sum gives $\tau_0=\sqrt[3]4$. If $c_n$ are the original
+ladder thresholds, then $c_{j+3}<\tau_j<c_{j+4}$ and
+$\tau_j\uparrow\varphi$.
+\end{proposition}
+\begin{proof}
+Induction gives
+$b_j=(4+\sum_{k=2}^{j+1}c^k)/c^{j+2}$. For the original ladder
+$r_0=1$, $r_{k+1}=(1+r_k)/c$, and $1<c<\varphi$,
+\[
+b_0-r_3=\frac{(2-c)(c-1)}{c^3}>0,\qquad
+r_4-b_0=\frac{(c-2)(c^2-c-1)}{c^4}>0.
+\]
+Iterating the increasing affine map gives $r_{j+3}<b_j<r_{j+4}$.
+Evaluating at the respective ladder thresholds proves the interlacing;
+their convergence to $\varphi$ gives the limit.
+\end{proof}
+
+For the later members we use the sorted ratio cutoffs
+\[
+\left\{\frac{c+2}{2c},r_1,\ldots,r_{j+2},b_0,\ldots,b_{j-1},c\right\}.
+\]
+There are eight cutoffs at $\tau_2$ and ten at $\tau_3$. The additive
+triple signs and the four-point flag families remain the same.
+
+More generally the template $1,r_1,r_2,b_0,\ldots,b_j$, slightly perturbed,
+gives a uniform lower bound for every $c>\tau_j$. For masses
+$p_0,\ldots,p_{j+3}$ its guaranteed one-scale probability is
+\[
+p_0^2\sum_{i=1}^{j+3}p_i
++2p_0\sum_{1\le i<k\le j+3}p_i p_k
++p_1^2\sum_{k=3}^{j+3}p_k.
+\]
+To justify strict feasibility for all these templates, use the same
+$x_0,x_1,x_2,x_3$ as above and continue
+$x_{k+1}=(1+x_k)/c+\varepsilon$ for $k\ge3$.
+For $\tau_j<c<\varphi$, sufficiently small $\varepsilon>0$ preserves
+ordering and $x_{j+3}<c$. All the selected successes are then strict.
+
+For completeness, put mass $w$ on this block and recursively put mass
+$1-w$ on a sufficiently smaller copy. The selected contributions are
+$w^3B$, $2w^2(1-w)$, $w(1-w)^2$, and the recursive contribution
+$(1-w)^3 S$. Finite truncations therefore approach
+\[
+L(B,w)=\frac{1-(1-B)w^2}{3-3w+w^2}.
+\]
+The scale separation can be chosen uniformly across levels for each fixed
+$c>\tau_j$, since the positive block has maximum less than $c$ times its
+minimum. Monotonicity covers $c\ge\varphi$.
+The exact rational masses and $w$ for the later endpoints are saved in
+\texttt{branch2\_lower.json} and \texttt{branch3\_lower.json}.
+
+\paragraph{The next branching discontinuity.}
+At $\tau_2=1.6076824592666596\ldots$, defined by
+$\tau_2^5=\tau_2^3+\tau_2^2+4$, the exact upper certificate gives
+\[
+S_2(\tau_2)\le\frac{928076293130715131}{2000000000000000000}
+<0.464038146566.
+\]
+The uniform right lower is
+\[
+L_2=\frac{18872601477188494350408465591458906090728633}
+{40650334203112904100000000000000000000000000}
+>0.464266822085.
+\]
+Consequently $S_2(\tau_2+)-S_2(\tau_2)>0.0002286755200$.
+The cover contains 4162 patterns and 47968 excluded prefixes, with PSD
+block dimensions $9,18,112,39,40,38,38,43,52,45,73$.
+
+\paragraph{Discontinuity at $\tau_3$.}
+At $\tau_3=1.6118224692844974\ldots$, the original ten-cutoff
+coloring suffices. The saved cover has 7542 patterns and 103331 exact
+excluded prefixes, with PSD block dimensions
+\[
+11,22,160,47,46,46,48,46,46,55,64,57,105.
+\]
+A longer optimization of this same SDP gives the exact certificate
+\[
+S_2(\tau_3)\le
+\frac{929589068751260629}{2000000000000000000}
+<0.464794534376.
+\]
+The fixed masses in \texttt{branch3\_lower.json}, using the uniform
+branch construction proved above, give
+\[
+L_3=\frac{18854601744361333727955719879293630392307573}
+{40552175811785600100000000000000000000000000}
+>0.464946735086.
+\]
+Their exact positive difference is
+\[
+L_3-U_3=
+\frac{6172070003747467725548707159398942307573}
+{40552175811785600100000000000000000000000000}
+>0.0001522007113.
+\]
+Allowing the full solve more time produced a separating certificate
+with the same sampled points, colors, and flag families.
+The search used a 600-second solver budget (about 644 seconds elapsed in
+the recorded run). The final proof uses only the rational Gram factors
+and the exact cover, independently of the solver status or tolerances.
+
+As a separate experiment, adding the branch-atom ratio
+$(c^2+4)/(4c)$ as an eleventh cutoff and optimizing Gram factors directly
+also gives a separating exact upper:
+\[
+S_2(\tau_3)\le\frac{557935142150665721}{1200000000000000000}.
+\]
+This weaker alternative uses 9625 patterns and 151158 excluded prefixes.
+Its cover reuses old exclusions by appending the new comparison forms;
+the verifier checks that the stored order is a permutation of all the
+required forms. The stronger theorem above uses the original coloring.
+
+\paragraph{Reproduction.}
+The alternative eleventh-cutoff cover is stored with Git LFS:
+\begin{verbatim}
+branch3_extra_branch_ratio_cover.json
+\end{verbatim}
+Before using that alternative cover, run from the repository root:
+\begin{verbatim}
+git lfs install
+git lfs pull
+\end{verbatim}
+The original ten-cutoff $\tau_3$ cover is stored in regular Git.
+
+From the repository root, the standard-library command
+\begin{verbatim}
+python3 graph_experiment/verify_family_discontinuities.py
+\end{verbatim}
+checks all saved full upper certificates, recomputes the exact lower
+probabilities from the saved masses, and verifies the positive gaps.
+For numerical regeneration, use the pinned search environment and run
+\begin{verbatim}
+python graph_experiment/family_endpoint_exact.py alpha3
+python graph_experiment/family_endpoint_exact.py branch1
+python graph_experiment/family_endpoint_exact.py branch2
+python graph_experiment/family_endpoint_exact.py branch3 --seconds 600
+\end{verbatim}
+The exact search reuses saved covers; in a fresh directory without JSON
+files it regenerates every algebraic exclusion. Numerical four-color
+tests did not separate either endpoint. Adding the two further
+ladder/branch cutoffs gave the successful six-color-cutoff formulations.
+\end{document}

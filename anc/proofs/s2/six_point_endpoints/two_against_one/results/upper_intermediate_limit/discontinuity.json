@@ -1,0 +1,53 @@
+{
+  "family": "limit",
+  "index": null,
+  "polynomial": [
+    -1,
+    1,
+    -2,
+    1
+  ],
+  "upper_at_root_exact": "2316930094435655746663/4500000000000000000000",
+  "upper_at_root": 0.5148733543190346,
+  "uniform_right_lower_exact": "71929205156616042120374974661526879/139325262544642719518814046415944631",
+  "uniform_right_lower": 0.5162682190070765,
+  "separation_exact": "874529499940602927641091303320181030783988713228983647/626963681450892237834663208871750839500000000000000000000",
+  "separation": 0.0013948646880419047,
+  "right_discontinuity_proved": true,
+  "endpoint_coverage": {
+    "exact_endpoint_cover": true,
+    "six_exclusions": 20178,
+    "seven_exclusions": 0,
+    "rays": 13133
+  },
+  "six_rows": 3533,
+  "gram_bound_independently_verified": true,
+  "uniform_right_lower_bound": {
+    "statement": "S2(c) >= value_exact for every c strictly above the indicated root",
+    "family": "limit",
+    "index": null,
+    "polynomial": [
+      -1,
+      1,
+      -2,
+      1
+    ],
+    "selected_ordered_successes": 32,
+    "masses_exact": [
+      "291318460344/1000000000001",
+      "156367655583/1000000000001",
+      "213602217643/1000000000001",
+      "338711666431/1000000000001"
+    ],
+    "base_exact": "503504436096312294842624822630688153/1000000000003000000000003000000000001",
+    "value_exact": "71929205156616042120374974661526879/139325262544642719518814046415944631",
+    "decimal": 0.5162682190070765,
+    "exact_checked": true
+  },
+  "proof_files": {
+    "cover6": "two_against_one/results/upper_intermediate_limit/cover6.json",
+    "endpoint": "two_against_one/results/upper_intermediate_limit/endpoint.json",
+    "upper": "two_against_one/results/upper_intermediate_limit/refinement/certificate.json",
+    "lower_families": "/home/pcb71/FlagAlgebraLinearInequalities/two_against_one/results/multinacci_families.json"
+  }
+}

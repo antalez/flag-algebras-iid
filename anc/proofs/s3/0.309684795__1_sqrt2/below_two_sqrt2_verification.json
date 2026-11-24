@@ -1,0 +1,29 @@
+{
+  "patterns": 24,
+  "exclusions": 46,
+  "original_dimensions": [
+    8,
+    7
+  ],
+  "reduced_dimensions": [
+    2,
+    3
+  ],
+  "endpoint_polynomial": [
+    -2,
+    0,
+    1
+  ],
+  "endpoint_decimal": 1.4142135623730951,
+  "bound": [
+    "-2",
+    "15/4",
+    "-3/2"
+  ],
+  "bound_decimal": 0.3096847954174251,
+  "tight_patterns": 9,
+  "interval": "1<c<=sqrt(2)",
+  "near_optimality_constraints_used": false,
+  "exact_plateau_proved": true,
+  "all_exact_checks_passed": true
+}

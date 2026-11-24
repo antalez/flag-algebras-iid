@@ -1,0 +1,29 @@
+{
+  "endpoint_polynomial": [
+    -2,
+    -1,
+    -1,
+    -1,
+    0,
+    -1,
+    1
+  ],
+  "endpoint_decimal": 1.7463314890021755,
+  "patterns": 1999,
+  "upper": "68727324611641214520889403/135009793324722480300000000",
+  "upper_decimal": 0.5090543650143943,
+  "uniform_right_lower": [
+    "-10768/867",
+    "936/289",
+    "8966/2601",
+    "-2366/2601",
+    "2/3",
+    "0",
+    "0",
+    "0"
+  ],
+  "uniform_right_lower_decimal": 0.5093764319755723,
+  "jump_lower": "322066961/1000000000000",
+  "jump_lower_decimal": 0.000322066961,
+  "all_exact_checks_passed": true
+}

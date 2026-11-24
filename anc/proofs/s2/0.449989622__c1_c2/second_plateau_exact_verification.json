@@ -1,0 +1,21 @@
+{
+  "patterns": 179,
+  "equality_patterns": 39,
+  "reduced_dimensions": [
+    1,
+    12,
+    9,
+    10
+  ],
+  "bound": [
+    "-28/27",
+    "2/27"
+  ],
+  "bound_decimal": 0.4499896222136839,
+  "second_endpoint_margin": [
+    "7792217407/2484000000",
+    "-1937696563/12420000000"
+  ],
+  "second_endpoint_margin_decimal": 0.005000000345155353,
+  "all_exact_checks_passed": true
+}

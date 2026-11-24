@@ -1,0 +1,138 @@
+{
+  "c": "121/50",
+  "c_decimal": 2.42,
+  "support_exact": [
+    "0",
+    "10041/14200",
+    "1"
+  ],
+  "support": [
+    0.0,
+    0.707112676056338,
+    1.0
+  ],
+  "masses_exact": [
+    "67917731461/200000000000",
+    "240538814997/500000000000",
+    "179333712701/1000000000000"
+  ],
+  "masses": [
+    0.339588657305,
+    0.481077629994,
+    0.179333712701
+  ],
+  "base_probability_exact": "496724494993727441661857297483549384321594856757/1000000000000000000000000000000000000000000000000",
+  "base_probability": 0.49672449499372745,
+  "recursive_probability_exact": "38209576537979033973989022883349952640122681289/75900091722207234209339223501059759797287526875",
+  "recursive_probability": 0.5034193723747435,
+  "above_half_exact": true,
+  "safe_scale_ratio_exact": "41/60000",
+  "safe_scale_ratio": 0.0006833333333333333,
+  "minimum_base_success_slack_exact": "41/10000",
+  "terms": [
+    {
+      "powers": [
+        0,
+        2,
+        2
+      ],
+      "coefficient": 3
+    },
+    {
+      "powers": [
+        0,
+        3,
+        1
+      ],
+      "coefficient": 1
+    },
+    {
+      "powers": [
+        1,
+        0,
+        3
+      ],
+      "coefficient": 3
+    },
+    {
+      "powers": [
+        1,
+        1,
+        2
+      ],
+      "coefficient": 6
+    },
+    {
+      "powers": [
+        1,
+        2,
+        1
+      ],
+      "coefficient": 9
+    },
+    {
+      "powers": [
+        1,
+        3,
+        0
+      ],
+      "coefficient": 3
+    },
+    {
+      "powers": [
+        2,
+        0,
+        2
+      ],
+      "coefficient": 3
+    },
+    {
+      "powers": [
+        2,
+        1,
+        1
+      ],
+      "coefficient": 6
+    },
+    {
+      "powers": [
+        2,
+        2,
+        0
+      ],
+      "coefficient": 3
+    },
+    {
+      "powers": [
+        3,
+        0,
+        1
+      ],
+      "coefficient": 1
+    },
+    {
+      "powers": [
+        3,
+        1,
+        0
+      ],
+      "coefficient": 1
+    }
+  ],
+  "starts": 12,
+  "best_optimizer_success": true,
+  "trial_value_min": 0.482781746628665,
+  "trial_value_max": 0.5034193723747435,
+  "interpretation": "Exact achieved lower bound from rational masses; mass optimization is local, not a global upper bound.",
+  "search": {
+    "previous_lower": 0.5032292077172523,
+    "fixed_support_baseline": 0.5034193723747435,
+    "insertion_cells": 24,
+    "cells_searched": 24,
+    "complete_cell_scan": true,
+    "seconds": 0.060615927999606356,
+    "interpretation": "Local mass optimization within each visited insertion cell; no optimality claim."
+  },
+  "uniform_above_silver": true,
+  "uniform_interpretation": "The same masses and success polynomial work for every c>1+sqrt(2), choosing r within (1/(c-1),(c-1)/2); use monotonicity for c>=3."
+}

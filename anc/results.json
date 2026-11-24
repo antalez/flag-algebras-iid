@@ -1,0 +1,491 @@
+{
+  "schema_version": 1,
+  "prefix_rule": "Lower bound truncated toward zero to nine decimal places; exact endpoint values use the same rule.",
+  "results": [
+    {
+      "family": "s2",
+      "directory": "anc/proofs/s2/0.430500874__1_c1",
+      "label": "1_c1",
+      "status": "exact",
+      "commands": [
+        [
+          "verify_first_plateau_flag.py"
+        ]
+      ],
+      "notes": ""
+    },
+    {
+      "family": "s2",
+      "directory": "anc/proofs/s2/0.449989622__c1_c2",
+      "label": "c1_c2",
+      "status": "exact",
+      "commands": [
+        [
+          "verify_second_plateau.py"
+        ]
+      ],
+      "notes": ""
+    },
+    {
+      "family": "s2",
+      "directory": "anc/proofs/s2/0.457361518__c2_c3",
+      "label": "c2_c3",
+      "status": "exact",
+      "commands": [
+        [
+          "verify_third_plateau.py"
+        ]
+      ],
+      "notes": ""
+    },
+    {
+      "family": "s2",
+      "directory": "anc/proofs/s2/0.460603680__c3_tau0",
+      "label": "c3_tau0",
+      "status": "band",
+      "commands": [
+        [
+          "../common/verify_near_small.py",
+          "near_tau0_refined_cover.json",
+          "near_tau0_full_near_certificate.json"
+        ],
+        [
+          "verify_cuberoot_discontinuity.py"
+        ]
+      ],
+      "notes": "verify_fourth_plateau.py supplies the exact lower arithmetic; its candidate exact upper certificate has not been found. The ordinary cube-root certificate also checks the jump after tau0, with a weaker upper bound."
+    },
+    {
+      "family": "s2",
+      "directory": "anc/proofs/s2/0.461389881__tau0_c4",
+      "label": "tau0_c4",
+      "status": "band",
+      "commands": [],
+      "notes": "The exact lower value is in verify_c4_branch_plateau.py. The ordinary endpoint upper is ladder4_exact_certificate.json; no exact plateau is claimed."
+    },
+    {
+      "family": "s2",
+      "directory": "anc/proofs/s2/0.462747996__c4_tau1",
+      "label": "c4_tau1",
+      "status": "band",
+      "commands": [
+        [
+          "verify_tau1_band.py",
+          "--ratios",
+          "31",
+          "--full-near-optimality"
+        ]
+      ],
+      "notes": "Use the full-near certificate for the width reported in Table 2. verify_tau1_plateau.py supplies the lower arithmetic and is not an accepted exact-upper proof."
+    },
+    {
+      "family": "s2",
+      "directory": "anc/proofs/s2/0.463221002__tau1_c5",
+      "label": "tau1_c5",
+      "status": "band",
+      "commands": [],
+      "notes": "Ordinary colored endpoint certificate and rational lower construction. Shared discontinuity verifiers also check the neighboring right-hand construction."
+    },
+    {
+      "family": "s2",
+      "directory": "anc/proofs/s2/0.463950398__c5_tau2",
+      "label": "c5_tau2",
+      "status": "band",
+      "commands": [],
+      "notes": "Ordinary colored endpoint certificate and rational lower construction. Shared discontinuity verifiers also check the neighboring right-hand construction."
+    },
+    {
+      "family": "s2",
+      "directory": "anc/proofs/s2/0.464266822__tau2_c6",
+      "label": "tau2_c6",
+      "status": "band",
+      "commands": [],
+      "notes": "Ordinary colored endpoint certificate and rational lower construction. Shared discontinuity verifiers also check the neighboring right-hand construction."
+    },
+    {
+      "family": "s2",
+      "directory": "anc/proofs/s2/0.464719509__c6_tau3",
+      "label": "c6_tau3",
+      "status": "band",
+      "commands": [],
+      "notes": "Ordinary colored endpoint certificate and rational lower construction. Shared discontinuity verifiers also check the neighboring right-hand construction."
+    },
+    {
+      "family": "s2",
+      "directory": "anc/proofs/s2/0.464946735__tau3_phi",
+      "label": "tau3_phi",
+      "status": "band",
+      "commands": [],
+      "notes": "The upper proof at phi is in anc/proofs/s2/six_point_endpoints/; see its README for the exact verification command."
+    },
+    {
+      "family": "s2",
+      "directory": "anc/proofs/s2/0.503098408__phi_alpha1",
+      "label": "phi_alpha1",
+      "status": "exact",
+      "commands": [
+        [
+          "verify_alpha1_plateau.py"
+        ]
+      ],
+      "notes": ""
+    },
+    {
+      "family": "s2",
+      "directory": "anc/proofs/s2/0.507073883__alpha1_alpha2",
+      "label": "alpha1_alpha2",
+      "status": "exact",
+      "commands": [
+        [
+          "verify_alpha2_plateau.py"
+        ]
+      ],
+      "notes": "The accepted exact certificate uses the six-cut refined cover (1774 patterns), not the older four-cut cover."
+    },
+    {
+      "family": "s2",
+      "directory": "anc/proofs/s2/0.508460361__alpha2_alpha3",
+      "label": "alpha2_alpha3",
+      "status": "exact",
+      "commands": [
+        [
+          "verify_alpha3_plateau.py"
+        ]
+      ],
+      "notes": ""
+    },
+    {
+      "family": "s2",
+      "directory": "anc/proofs/s2/0.509054132__alpha3_alpha4",
+      "label": "alpha3_alpha4",
+      "status": "band",
+      "commands": [
+        [
+          "verify_alpha4_band.py"
+        ],
+        [
+          "check_alpha3_improved_jump.py"
+        ],
+        [
+          "verify_alpha4_discontinuity.py"
+        ]
+      ],
+      "notes": "check_beta3prime_lower.py supplies the lower value despite its historical name. This is a certified band, not an exact plateau. The alpha4 discontinuity check also uses the right-hand lower construction in the next directory."
+    },
+    {
+      "family": "s2",
+      "directory": "anc/proofs/s2/0.509376431__alpha4_beta3prime",
+      "label": "alpha4_beta3prime",
+      "status": "band",
+      "commands": [
+        [
+          "check_alpha4_right_lower.py"
+        ]
+      ],
+      "notes": "Lower construction only in this directory. The upper proof at beta3prime is in anc/proofs/s2/six_point_endpoints/."
+    },
+    {
+      "family": "s3",
+      "directory": "anc/proofs/s3/0.309684795__1_sqrt2",
+      "label": "1_sqrt2",
+      "status": "exact",
+      "commands": [
+        [
+          "verify_below_two.py"
+        ]
+      ],
+      "notes": ""
+    },
+    {
+      "family": "s3",
+      "directory": "anc/proofs/s3/0.482781746__2_gamma",
+      "label": "2_gamma",
+      "status": "exact",
+      "commands": [
+        [
+          "verify_endpoint.py"
+        ]
+      ],
+      "notes": "gamma=(1+sqrt(13))/2."
+    },
+    {
+      "family": "s3",
+      "directory": "anc/proofs/s3/0.491156081__gamma_47over20",
+      "label": "gamma_47over20",
+      "status": "exact",
+      "commands": [
+        [
+          "verify_second_plateau.py"
+        ]
+      ],
+      "notes": "The verified upper endpoint is 47/20. The candidate algebraic endpoint is not proved."
+    },
+    {
+      "family": "s3",
+      "directory": "anc/proofs/s3/silver_ratio_seven_point",
+      "label": "silver_ratio_seven_point",
+      "status": "upper_bound",
+      "commands": [
+        [
+          "verify7_k.py"
+        ]
+      ],
+      "notes": "Exact seven-point silver-ratio upper bound. Requires NumPy and two compressed JSON inputs; run separately from the shared fast S3 checks."
+    },
+    {
+      "family": "s3",
+      "directory": "anc/proofs/s3/silver_ratio_lower",
+      "label": "silver_ratio_lower",
+      "status": "lower_bound",
+      "commands": [
+        [
+          "verify_lower.py"
+        ]
+      ],
+      "notes": "Endpoint ladder lower bound only. Optional SymPy field check: verify_field.py. Extracted Lean probability proofs and pinned dependencies are in lean/."
+    },
+    {
+      "family": "s3",
+      "directory": "anc/proofs/s3/0.400695372__c2",
+      "label": "c2",
+      "status": "exact_endpoint",
+      "commands": [
+        [
+          "verify.py",
+          "cover_n4.json",
+          "cert_exact.json"
+        ],
+        [
+          "redteam.py"
+        ],
+        [
+          "five_point/verify_field_certificate.py"
+        ]
+      ],
+      "notes": "C=C_BF. The independent verifier is preserved in independent/. Lean entry point: anc/lean/BeatAvg/Four/Final.lean. cert_stage2.json is the superseded rational approximation, not the exact proof input."
+    }
+  ],
+  "moves": {
+    "graph_experiment/verify_first_plateau_flag.py": "anc/proofs/s2/0.430500874__1_c1/verify_first_plateau_flag.py",
+    "graph_experiment/first_plateau_flag.json": "anc/proofs/s2/0.430500874__1_c1/first_plateau_flag.json",
+    "graph_experiment/first_plateau_flag.tex": "anc/proofs/s2/0.430500874__1_c1/first_plateau_flag.tex",
+    "graph_experiment/verify_second_plateau.py": "anc/proofs/s2/0.449989622__c1_c2/verify_second_plateau.py",
+    "graph_experiment/near_c2_exact_cover.json": "anc/proofs/s2/0.449989622__c1_c2/near_c2_exact_cover.json",
+    "graph_experiment/second_plateau_exact_certificate.json": "anc/proofs/s2/0.449989622__c1_c2/second_plateau_exact_certificate.json",
+    "graph_experiment/second_plateau_exact_verification.json": "anc/proofs/s2/0.449989622__c1_c2/second_plateau_exact_verification.json",
+    "graph_experiment/verify_third_plateau.py": "anc/proofs/s2/0.457361518__c2_c3/verify_third_plateau.py",
+    "graph_experiment/near_c3_refined_cover.json": "anc/proofs/s2/0.457361518__c2_c3/near_c3_refined_cover.json",
+    "graph_experiment/third_plateau_exact_certificate.json": "anc/proofs/s2/0.457361518__c2_c3/third_plateau_exact_certificate.json",
+    "graph_experiment/third_plateau_exact_verification.json": "anc/proofs/s2/0.457361518__c2_c3/third_plateau_exact_verification.json",
+    "graph_experiment/verify_fourth_plateau.py": "anc/proofs/s2/0.460603680__c3_tau0/verify_fourth_plateau.py",
+    "graph_experiment/near_tau0_refined_cover.json": "anc/proofs/s2/0.460603680__c3_tau0/near_tau0_refined_cover.json",
+    "graph_experiment/near_tau0_full_near_certificate.json": "anc/proofs/s2/0.460603680__c3_tau0/near_tau0_full_near_certificate.json",
+    "graph_experiment/cuberoot_exact_cover.json": "anc/proofs/s2/0.460603680__c3_tau0/cuberoot_exact_cover.json",
+    "graph_experiment/cuberoot_exact_certificate.json": "anc/proofs/s2/0.460603680__c3_tau0/cuberoot_exact_certificate.json",
+    "graph_experiment/cuberoot_discontinuity.json": "anc/proofs/s2/0.460603680__c3_tau0/cuberoot_discontinuity.json",
+    "graph_experiment/verify_cuberoot_discontinuity.py": "anc/proofs/s2/0.460603680__c3_tau0/verify_cuberoot_discontinuity.py",
+    "graph_experiment/verify_c4_branch_plateau.py": "anc/proofs/s2/0.461389881__tau0_c4/verify_c4_branch_plateau.py",
+    "graph_experiment/ladder4_exact_cover.json": "anc/proofs/s2/0.461389881__tau0_c4/ladder4_exact_cover.json",
+    "graph_experiment/ladder4_exact_certificate.json": "anc/proofs/s2/0.461389881__tau0_c4/ladder4_exact_certificate.json",
+    "graph_experiment/verify_tau1_plateau.py": "anc/proofs/s2/0.462747996__c4_tau1/verify_tau1_plateau.py",
+    "graph_experiment/verify_tau1_band.py": "anc/proofs/s2/0.462747996__c4_tau1/verify_tau1_band.py",
+    "graph_experiment/near_tau1_ratios_31_cover.json": "anc/proofs/s2/0.462747996__c4_tau1/near_tau1_ratios_31_cover.json",
+    "graph_experiment/near_tau1_ratios_31_full_near_certificate.json": "anc/proofs/s2/0.462747996__c4_tau1/near_tau1_ratios_31_full_near_certificate.json",
+    "graph_experiment/tau1_ratios_31_full_near_plateau_band.json": "anc/proofs/s2/0.462747996__c4_tau1/tau1_ratios_31_full_near_plateau_band.json",
+    "graph_experiment/ladder4_lower.json": "anc/proofs/s2/0.462747996__c4_tau1/ladder4_lower.json",
+    "graph_experiment/tau1_lower_proof.md": "anc/proofs/s2/0.462747996__c4_tau1/tau1_lower_proof.md",
+    "graph_experiment/ladder5_exact_cover.json": "anc/proofs/s2/0.463221002__tau1_c5/ladder5_exact_cover.json",
+    "graph_experiment/ladder5_exact_certificate.json": "anc/proofs/s2/0.463221002__tau1_c5/ladder5_exact_certificate.json",
+    "graph_experiment/branch1_lower.json": "anc/proofs/s2/0.463221002__tau1_c5/branch1_lower.json",
+    "graph_experiment/branch2_exact_cover.json": "anc/proofs/s2/0.463950398__c5_tau2/branch2_exact_cover.json",
+    "graph_experiment/branch2_exact_certificate.json": "anc/proofs/s2/0.463950398__c5_tau2/branch2_exact_certificate.json",
+    "graph_experiment/ladder5_lower.json": "anc/proofs/s2/0.463950398__c5_tau2/ladder5_lower.json",
+    "graph_experiment/ladder6_exact_cover.json": "anc/proofs/s2/0.464266822__tau2_c6/ladder6_exact_cover.json",
+    "graph_experiment/ladder6_exact_certificate.json": "anc/proofs/s2/0.464266822__tau2_c6/ladder6_exact_certificate.json",
+    "graph_experiment/branch2_lower.json": "anc/proofs/s2/0.464266822__tau2_c6/branch2_lower.json",
+    "graph_experiment/branch3_exact_cover.json": "anc/proofs/s2/0.464719509__c6_tau3/branch3_exact_cover.json",
+    "graph_experiment/branch3_exact_certificate.json": "anc/proofs/s2/0.464719509__c6_tau3/branch3_exact_certificate.json",
+    "graph_experiment/ladder6_lower.json": "anc/proofs/s2/0.464719509__c6_tau3/ladder6_lower.json",
+    "graph_experiment/branch1_exact_cover.json": "anc/proofs/s2/0.462747996__c4_tau1/branch1_exact_cover.json",
+    "graph_experiment/branch1_exact_certificate.json": "anc/proofs/s2/0.462747996__c4_tau1/branch1_exact_certificate.json",
+    "graph_experiment/branch3_lower.json": "anc/proofs/s2/0.464946735__tau3_phi/branch3_lower.json",
+    "graph_experiment/verify_alpha1_plateau.py": "anc/proofs/s2/0.503098408__phi_alpha1/verify_alpha1_plateau.py",
+    "graph_experiment/near_alpha1_exact_cover.json": "anc/proofs/s2/0.503098408__phi_alpha1/near_alpha1_exact_cover.json",
+    "graph_experiment/alpha1_plateau_exact_certificate.json": "anc/proofs/s2/0.503098408__phi_alpha1/alpha1_plateau_exact_certificate.json",
+    "graph_experiment/alpha1_plateau_exact_verification.json": "anc/proofs/s2/0.503098408__phi_alpha1/alpha1_plateau_exact_verification.json",
+    "graph_experiment/verify_alpha2_plateau.py": "anc/proofs/s2/0.507073883__alpha1_alpha2/verify_alpha2_plateau.py",
+    "graph_experiment/near_alpha2_exact_cover.json": "anc/proofs/s2/0.507073883__alpha1_alpha2/near_alpha2_exact_cover.json",
+    "graph_experiment/alpha2_plateau_exact_certificate.json": "anc/proofs/s2/0.507073883__alpha1_alpha2/alpha2_plateau_exact_certificate.json",
+    "graph_experiment/alpha2_plateau_exact_verification.json": "anc/proofs/s2/0.507073883__alpha1_alpha2/alpha2_plateau_exact_verification.json",
+    "graph_experiment/verify_alpha3_plateau.py": "anc/proofs/s2/0.508460361__alpha2_alpha3/verify_alpha3_plateau.py",
+    "graph_experiment/alpha3_exact_cover.json": "anc/proofs/s2/0.508460361__alpha2_alpha3/alpha3_exact_cover.json",
+    "graph_experiment/alpha3_plateau_exact_certificate.json": "anc/proofs/s2/0.508460361__alpha2_alpha3/alpha3_plateau_exact_certificate.json",
+    "graph_experiment/alpha3_plateau_exact_verification.json": "anc/proofs/s2/0.508460361__alpha2_alpha3/alpha3_plateau_exact_verification.json",
+    "graph_experiment/verify_alpha4_plateau.py": "anc/proofs/s2/0.509054132__alpha3_alpha4/verify_alpha4_plateau.py",
+    "graph_experiment/verify_alpha4_band.py": "anc/proofs/s2/0.509054132__alpha3_alpha4/verify_alpha4_band.py",
+    "graph_experiment/verify_alpha4_discontinuity.py": "anc/proofs/s2/0.509054132__alpha3_alpha4/verify_alpha4_discontinuity.py",
+    "graph_experiment/near_alpha4_exact_cover.json": "anc/proofs/s2/0.509054132__alpha3_alpha4/near_alpha4_exact_cover.json",
+    "graph_experiment/near_alpha4_certificate.json": "anc/proofs/s2/0.509054132__alpha3_alpha4/near_alpha4_certificate.json",
+    "graph_experiment/alpha4_plateau_band.json": "anc/proofs/s2/0.509054132__alpha3_alpha4/alpha4_plateau_band.json",
+    "graph_experiment/alpha4_discontinuity.json": "anc/proofs/s2/0.509054132__alpha3_alpha4/alpha4_discontinuity.json",
+    "graph_experiment/alpha3_lower.json": "anc/proofs/s2/0.509054132__alpha3_alpha4/alpha3_lower.json",
+    "graph_experiment/check_alpha3_improved_jump.py": "anc/proofs/s2/0.509054132__alpha3_alpha4/check_alpha3_improved_jump.py",
+    "graph_experiment/check_beta3prime_lower.py": "anc/proofs/s2/0.509054132__alpha3_alpha4/check_beta3prime_lower.py",
+    "graph_experiment/beta3prime_lower_proof.md": "anc/proofs/s2/0.509054132__alpha3_alpha4/beta3prime_lower_proof.md",
+    "graph_experiment/check_alpha4_right_lower.py": "anc/proofs/s2/0.509376431__alpha4_beta3prime/check_alpha4_right_lower.py",
+    "graph_experiment/alpha4_right_lower_proof.md": "anc/proofs/s2/0.509376431__alpha4_beta3prime/alpha4_right_lower_proof.md",
+    "graph_experiment/algebraic_field.py": "anc/proofs/common/algebraic_field.py",
+    "graph_experiment/quadratic_tower.py": "anc/proofs/common/quadratic_tower.py",
+    "graph_experiment/verify_psd_interval.py": "anc/proofs/common/verify_psd_interval.py",
+    "graph_experiment/cuberoot_field.py": "anc/proofs/common/cuberoot_field.py",
+    "graph_experiment/hybrid_verify.py": "anc/proofs/s2/common/hybrid_verify.py",
+    "graph_experiment/verify_near_small.py": "anc/proofs/s2/common/verify_near_small.py",
+    "graph_experiment/near_optimal_weights.py": "anc/proofs/s2/common/near_optimal_weights.py",
+    "graph_experiment/verify_family_discontinuities.py": "anc/proofs/s2/common/verify_family_discontinuities.py",
+    "graph_experiment/verify_ladder_discontinuities.py": "anc/proofs/s2/common/verify_ladder_discontinuities.py",
+    "graph_experiment/test_algebraic_field.py": "anc/proofs/common/tests/test_algebraic_field.py",
+    "graph_experiment/test_quadratic_tower.py": "anc/proofs/common/tests/test_quadratic_tower.py",
+    "graph_experiment/test_near_small.py": "anc/proofs/common/tests/test_near_small.py",
+    "graph_experiment/three_against_one/verify_below_two.py": "anc/proofs/s3/0.309684795__1_sqrt2/verify_below_two.py",
+    "graph_experiment/three_against_one/below_two_endpoint.py": "anc/proofs/s3/0.309684795__1_sqrt2/below_two_endpoint.py",
+    "graph_experiment/three_against_one/below_two_field.py": "anc/proofs/s3/0.309684795__1_sqrt2/below_two_field.py",
+    "graph_experiment/three_against_one/below_two_sqrt2_cover.json": "anc/proofs/s3/0.309684795__1_sqrt2/below_two_sqrt2_cover.json",
+    "graph_experiment/three_against_one/below_two_sqrt2_field_certificate.json": "anc/proofs/s3/0.309684795__1_sqrt2/below_two_sqrt2_field_certificate.json",
+    "graph_experiment/three_against_one/below_two_sqrt2_verification.json": "anc/proofs/s3/0.309684795__1_sqrt2/below_two_sqrt2_verification.json",
+    "graph_experiment/three_against_one/verify_endpoint.py": "anc/proofs/s3/0.482781746__2_gamma/verify_endpoint.py",
+    "graph_experiment/three_against_one/endpoint_cover.py": "anc/proofs/s3/0.482781746__2_gamma/endpoint_cover.py",
+    "graph_experiment/three_against_one/endpoint_field.py": "anc/proofs/s3/0.482781746__2_gamma/endpoint_field.py",
+    "graph_experiment/three_against_one/endpoint_n4_cover.json": "anc/proofs/s3/0.482781746__2_gamma/endpoint_n4_cover.json",
+    "graph_experiment/three_against_one/endpoint_n4_field_certificate.json": "anc/proofs/s3/0.482781746__2_gamma/endpoint_n4_field_certificate.json",
+    "graph_experiment/three_against_one/endpoint_n4_verification.json": "anc/proofs/s3/0.482781746__2_gamma/endpoint_n4_verification.json",
+    "graph_experiment/three_against_one/verify_second_plateau.py": "anc/proofs/s3/0.491156081__gamma_47over20/verify_second_plateau.py",
+    "graph_experiment/three_against_one/second_endpoint_cover.py": "anc/proofs/s3/0.491156081__gamma_47over20/second_endpoint_cover.py",
+    "graph_experiment/three_against_one/second_plateau_field.py": "anc/proofs/s3/0.491156081__gamma_47over20/second_plateau_field.py",
+    "graph_experiment/three_against_one/second_plateau_n4_field_certificate.json": "anc/proofs/s3/0.491156081__gamma_47over20/second_plateau_n4_field_certificate.json",
+    "graph_experiment/three_against_one/second_plateau_n4_verification.json": "anc/proofs/s3/0.491156081__gamma_47over20/second_plateau_n4_verification.json",
+    "graph_experiment/three_against_one/n4_c47-20_cuts47-40_60-47_27-20_47-27_47-20_cover.json": "anc/proofs/s3/0.491156081__gamma_47over20/n4_c47-20_cuts47-40_60-47_27-20_47-27_47-20_cover.json",
+    "graph_experiment/three_against_one/verify.py": "anc/proofs/s3/common/verify.py",
+    "graph_experiment/three_against_one/verify_all.py": "anc/proofs/s3/common/verify_all.py",
+    "graph_experiment/three_against_one/test_verify.py": "anc/proofs/s3/common/test_verify.py",
+    "graph_experiment/three_against_one/test_below_two.py": "anc/proofs/s3/common/test_below_two.py",
+    "graph_experiment/three_against_one/test_endpoint.py": "anc/proofs/s3/common/test_endpoint.py",
+    "graph_experiment/three_against_one/test_second_plateau.py": "anc/proofs/s3/common/test_second_plateau.py",
+    "graph_experiment/three_against_one/below_two_insertion.json": "anc/proofs/s3/lower_constructions/below_two_insertion.json",
+    "graph_experiment/three_against_one/below_two_lower.json": "anc/proofs/s3/lower_constructions/below_two_lower.json",
+    "graph_experiment/three_against_one/below_two_uniform_jump.json": "anc/proofs/s3/lower_constructions/below_two_uniform_jump.json",
+    "graph_experiment/three_against_one/lower_baseline.json": "anc/proofs/s3/lower_constructions/lower_baseline.json",
+    "graph_experiment/three_against_one/lower_ladders.json": "anc/proofs/s3/lower_constructions/lower_ladders.json",
+    "graph_experiment/three_against_one/lower_scout.json": "anc/proofs/s3/lower_constructions/lower_scout.json",
+    "graph_experiment/three_against_one/lower_thresholds.json": "anc/proofs/s3/lower_constructions/lower_thresholds.json",
+    "graph_experiment/three_against_one/lower_uniform.json": "anc/proofs/s3/lower_constructions/lower_uniform.json",
+    "graph_experiment/three_against_one/n4_c11-10_cuts11-10_20-11_certificate.json": "anc/proofs/s3/rational/n4_c11-10_cuts11-10_20-11_certificate.json",
+    "graph_experiment/three_against_one/n4_c11-10_cuts11-10_20-11_cover.json": "anc/proofs/s3/rational/n4_c11-10_cuts11-10_20-11_cover.json",
+    "graph_experiment/three_against_one/n4_c11-10_cuts11-10_20-11_report.json": "anc/proofs/s3/rational/n4_c11-10_cuts11-10_20-11_report.json",
+    "graph_experiment/three_against_one/n4_c119-50_cuts119-100_69-50_119-69_119-50_certificate.json": "anc/proofs/s3/rational/n4_c119-50_cuts119-100_69-50_119-69_119-50_certificate.json",
+    "graph_experiment/three_against_one/n4_c119-50_cuts119-100_69-50_119-69_119-50_cover.json": "anc/proofs/s3/rational/n4_c119-50_cuts119-100_69-50_119-69_119-50_cover.json",
+    "graph_experiment/three_against_one/n4_c119-50_cuts119-100_69-50_119-69_119-50_report.json": "anc/proofs/s3/rational/n4_c119-50_cuts119-100_69-50_119-69_119-50_report.json",
+    "graph_experiment/three_against_one/n4_c12-5_cuts6-5_5-4_65-48_805-576_7-5_12-7_12-5_certificate.json": "anc/proofs/s3/rational/n4_c12-5_cuts6-5_5-4_65-48_805-576_7-5_12-7_12-5_certificate.json",
+    "graph_experiment/three_against_one/n4_c12-5_cuts6-5_5-4_65-48_805-576_7-5_12-7_12-5_cover.json": "anc/proofs/s3/rational/n4_c12-5_cuts6-5_5-4_65-48_805-576_7-5_12-7_12-5_cover.json",
+    "graph_experiment/three_against_one/n4_c12-5_cuts6-5_5-4_65-48_805-576_7-5_12-7_12-5_report.json": "anc/proofs/s3/rational/n4_c12-5_cuts6-5_5-4_65-48_805-576_7-5_12-7_12-5_report.json",
+    "graph_experiment/three_against_one/n4_c12-5_cuts6-5_7-5_12-7_12-5_certificate.json": "anc/proofs/s3/rational/n4_c12-5_cuts6-5_7-5_12-7_12-5_certificate.json",
+    "graph_experiment/three_against_one/n4_c12-5_cuts6-5_7-5_12-7_12-5_cover.json": "anc/proofs/s3/rational/n4_c12-5_cuts6-5_7-5_12-7_12-5_cover.json",
+    "graph_experiment/three_against_one/n4_c12-5_cuts6-5_7-5_12-7_12-5_report.json": "anc/proofs/s3/rational/n4_c12-5_cuts6-5_7-5_12-7_12-5_report.json",
+    "graph_experiment/three_against_one/n4_c121-50_cuts121-100_71-50_121-71_121-50_certificate.json": "anc/proofs/s3/rational/n4_c121-50_cuts121-100_71-50_121-71_121-50_certificate.json",
+    "graph_experiment/three_against_one/n4_c121-50_cuts121-100_71-50_121-71_121-50_cover.json": "anc/proofs/s3/rational/n4_c121-50_cuts121-100_71-50_121-71_121-50_cover.json",
+    "graph_experiment/three_against_one/n4_c121-50_cuts121-100_71-50_121-71_121-50_report.json": "anc/proofs/s3/rational/n4_c121-50_cuts121-100_71-50_121-71_121-50_report.json",
+    "graph_experiment/three_against_one/n4_c19-10_cuts20-19_19-10_19-9_certificate.json": "anc/proofs/s3/rational/n4_c19-10_cuts20-19_19-10_19-9_certificate.json",
+    "graph_experiment/three_against_one/n4_c19-10_cuts20-19_19-10_19-9_cover.json": "anc/proofs/s3/rational/n4_c19-10_cuts20-19_19-10_19-9_cover.json",
+    "graph_experiment/three_against_one/n4_c19-10_cuts20-19_19-10_19-9_report.json": "anc/proofs/s3/rational/n4_c19-10_cuts20-19_19-10_19-9_report.json",
+    "graph_experiment/three_against_one/n4_c19-10_cuts20-19_7-6_3-2_19-10_2-1_19-9_certificate.json": "anc/proofs/s3/rational/n4_c19-10_cuts20-19_7-6_3-2_19-10_2-1_19-9_certificate.json",
+    "graph_experiment/three_against_one/n4_c19-10_cuts20-19_7-6_3-2_19-10_2-1_19-9_cover.json": "anc/proofs/s3/rational/n4_c19-10_cuts20-19_7-6_3-2_19-10_2-1_19-9_cover.json",
+    "graph_experiment/three_against_one/n4_c19-10_cuts20-19_7-6_3-2_19-10_2-1_19-9_report.json": "anc/proofs/s3/rational/n4_c19-10_cuts20-19_7-6_3-2_19-10_2-1_19-9_report.json",
+    "graph_experiment/three_against_one/n4_c199-100_cuts200-199_7-6_3-2_199-100_2-1_199-99_certificate.json": "anc/proofs/s3/rational/n4_c199-100_cuts200-199_7-6_3-2_199-100_2-1_199-99_certificate.json",
+    "graph_experiment/three_against_one/n4_c199-100_cuts200-199_7-6_3-2_199-100_2-1_199-99_cover.json": "anc/proofs/s3/rational/n4_c199-100_cuts200-199_7-6_3-2_199-100_2-1_199-99_cover.json",
+    "graph_experiment/three_against_one/n4_c199-100_cuts200-199_7-6_3-2_199-100_2-1_199-99_report.json": "anc/proofs/s3/rational/n4_c199-100_cuts200-199_7-6_3-2_199-100_2-1_199-99_report.json",
+    "graph_experiment/three_against_one/n4_c23-10_cuts23-20_13-10_23-13_23-10_certificate.json": "anc/proofs/s3/rational/n4_c23-10_cuts23-20_13-10_23-13_23-10_certificate.json",
+    "graph_experiment/three_against_one/n4_c23-10_cuts23-20_13-10_23-13_23-10_cover.json": "anc/proofs/s3/rational/n4_c23-10_cuts23-20_13-10_23-13_23-10_cover.json",
+    "graph_experiment/three_against_one/n4_c23-10_cuts23-20_13-10_23-13_23-10_report.json": "anc/proofs/s3/rational/n4_c23-10_cuts23-20_13-10_23-13_23-10_report.json",
+    "graph_experiment/three_against_one/n4_c23-10_cuts23-20_13-10_certificate.json": "anc/proofs/s3/rational/n4_c23-10_cuts23-20_13-10_certificate.json",
+    "graph_experiment/three_against_one/n4_c23-10_cuts23-20_13-10_cover.json": "anc/proofs/s3/rational/n4_c23-10_cuts23-20_13-10_cover.json",
+    "graph_experiment/three_against_one/n4_c23-10_cuts23-20_13-10_report.json": "anc/proofs/s3/rational/n4_c23-10_cuts23-20_13-10_report.json",
+    "graph_experiment/three_against_one/n4_c3-2_cuts4-3_3-2_2-1_3-1_certificate.json": "anc/proofs/s3/rational/n4_c3-2_cuts4-3_3-2_2-1_3-1_certificate.json",
+    "graph_experiment/three_against_one/n4_c3-2_cuts4-3_3-2_2-1_3-1_cover.json": "anc/proofs/s3/rational/n4_c3-2_cuts4-3_3-2_2-1_3-1_cover.json",
+    "graph_experiment/three_against_one/n4_c3-2_cuts4-3_3-2_2-1_3-1_report.json": "anc/proofs/s3/rational/n4_c3-2_cuts4-3_3-2_2-1_3-1_report.json",
+    "graph_experiment/three_against_one/n4_c3-2_cuts4-3_3-2_certificate.json": "anc/proofs/s3/rational/n4_c3-2_cuts4-3_3-2_certificate.json",
+    "graph_experiment/three_against_one/n4_c3-2_cuts4-3_3-2_cover.json": "anc/proofs/s3/rational/n4_c3-2_cuts4-3_3-2_cover.json",
+    "graph_experiment/three_against_one/n4_c3-2_cuts4-3_3-2_report.json": "anc/proofs/s3/rational/n4_c3-2_cuts4-3_3-2_report.json",
+    "graph_experiment/three_against_one/n4_c37-20_cuts40-37_37-20_certificate.json": "anc/proofs/s3/rational/n4_c37-20_cuts40-37_37-20_certificate.json",
+    "graph_experiment/three_against_one/n4_c37-20_cuts40-37_37-20_cover.json": "anc/proofs/s3/rational/n4_c37-20_cuts40-37_37-20_cover.json",
+    "graph_experiment/three_against_one/n4_c37-20_cuts40-37_37-20_report.json": "anc/proofs/s3/rational/n4_c37-20_cuts40-37_37-20_report.json",
+    "graph_experiment/three_against_one/n4_c37-20_cuts40-37_7-6_3-2_37-20_2-1_37-17_certificate.json": "anc/proofs/s3/rational/n4_c37-20_cuts40-37_7-6_3-2_37-20_2-1_37-17_certificate.json",
+    "graph_experiment/three_against_one/n4_c37-20_cuts40-37_7-6_3-2_37-20_2-1_37-17_cover.json": "anc/proofs/s3/rational/n4_c37-20_cuts40-37_7-6_3-2_37-20_2-1_37-17_cover.json",
+    "graph_experiment/three_against_one/n4_c37-20_cuts40-37_7-6_3-2_37-20_2-1_37-17_report.json": "anc/proofs/s3/rational/n4_c37-20_cuts40-37_7-6_3-2_37-20_2-1_37-17_report.json",
+    "graph_experiment/three_against_one/n4_c39-20_cuts40-39_7-6_3-2_39-20_2-1_39-19_certificate.json": "anc/proofs/s3/rational/n4_c39-20_cuts40-39_7-6_3-2_39-20_2-1_39-19_certificate.json",
+    "graph_experiment/three_against_one/n4_c39-20_cuts40-39_7-6_3-2_39-20_2-1_39-19_cover.json": "anc/proofs/s3/rational/n4_c39-20_cuts40-39_7-6_3-2_39-20_2-1_39-19_cover.json",
+    "graph_experiment/three_against_one/n4_c39-20_cuts40-39_7-6_3-2_39-20_2-1_39-19_report.json": "anc/proofs/s3/rational/n4_c39-20_cuts40-39_7-6_3-2_39-20_2-1_39-19_report.json",
+    "graph_experiment/three_against_one/n4_c47-20_cuts47-40_27-20_47-27_47-20_certificate.json": "anc/proofs/s3/rational/n4_c47-20_cuts47-40_27-20_47-27_47-20_certificate.json",
+    "graph_experiment/three_against_one/n4_c47-20_cuts47-40_27-20_47-27_47-20_cover.json": "anc/proofs/s3/rational/n4_c47-20_cuts47-40_27-20_47-27_47-20_cover.json",
+    "graph_experiment/three_against_one/n4_c47-20_cuts47-40_27-20_47-27_47-20_report.json": "anc/proofs/s3/rational/n4_c47-20_cuts47-40_27-20_47-27_47-20_report.json",
+    "graph_experiment/three_against_one/n4_c47-20_cuts47-40_60-47_27-20_47-27_47-20_certificate.json": "anc/proofs/s3/rational/n4_c47-20_cuts47-40_60-47_27-20_47-27_47-20_certificate.json",
+    "graph_experiment/three_against_one/n4_c47-20_cuts47-40_60-47_27-20_47-27_47-20_report.json": "anc/proofs/s3/rational/n4_c47-20_cuts47-40_60-47_27-20_47-27_47-20_report.json",
+    "graph_experiment/three_against_one/n4_c59-25_cuts59-50_75-59_34-25_59-34_59-25_certificate.json": "anc/proofs/s3/rational/n4_c59-25_cuts59-50_75-59_34-25_59-34_59-25_certificate.json",
+    "graph_experiment/three_against_one/n4_c59-25_cuts59-50_75-59_34-25_59-34_59-25_cover.json": "anc/proofs/s3/rational/n4_c59-25_cuts59-50_75-59_34-25_59-34_59-25_cover.json",
+    "graph_experiment/three_against_one/n4_c59-25_cuts59-50_75-59_34-25_59-34_59-25_report.json": "anc/proofs/s3/rational/n4_c59-25_cuts59-50_75-59_34-25_59-34_59-25_report.json",
+    "graph_experiment/three_against_one/n4_c7-4_cuts8-7_4-3_12-7_7-4_7-3_certificate.json": "anc/proofs/s3/rational/n4_c7-4_cuts8-7_4-3_12-7_7-4_7-3_certificate.json",
+    "graph_experiment/three_against_one/n4_c7-4_cuts8-7_4-3_12-7_7-4_7-3_cover.json": "anc/proofs/s3/rational/n4_c7-4_cuts8-7_4-3_12-7_7-4_7-3_cover.json",
+    "graph_experiment/three_against_one/n4_c7-4_cuts8-7_4-3_12-7_7-4_7-3_report.json": "anc/proofs/s3/rational/n4_c7-4_cuts8-7_4-3_12-7_7-4_7-3_report.json",
+    "graph_experiment/three_against_one/n4_c7-4_cuts8-7_7-4_certificate.json": "anc/proofs/s3/rational/n4_c7-4_cuts8-7_7-4_certificate.json",
+    "graph_experiment/three_against_one/n4_c7-4_cuts8-7_7-4_cover.json": "anc/proofs/s3/rational/n4_c7-4_cuts8-7_7-4_cover.json",
+    "graph_experiment/three_against_one/n4_c7-4_cuts8-7_7-4_report.json": "anc/proofs/s3/rational/n4_c7-4_cuts8-7_7-4_report.json",
+    "graph_experiment/three_against_one/n4_c7-5_cuts7-5_10-7_certificate.json": "anc/proofs/s3/rational/n4_c7-5_cuts7-5_10-7_certificate.json",
+    "graph_experiment/three_against_one/n4_c7-5_cuts7-5_10-7_cover.json": "anc/proofs/s3/rational/n4_c7-5_cuts7-5_10-7_cover.json",
+    "graph_experiment/three_against_one/n4_c7-5_cuts7-5_10-7_report.json": "anc/proofs/s3/rational/n4_c7-5_cuts7-5_10-7_report.json",
+    "graph_experiment/three_against_one/n4_c8-5_cuts5-4_8-5_5-3_15-8_8-3_certificate.json": "anc/proofs/s3/rational/n4_c8-5_cuts5-4_8-5_5-3_15-8_8-3_certificate.json",
+    "graph_experiment/three_against_one/n4_c8-5_cuts5-4_8-5_5-3_15-8_8-3_cover.json": "anc/proofs/s3/rational/n4_c8-5_cuts5-4_8-5_5-3_15-8_8-3_cover.json",
+    "graph_experiment/three_against_one/n4_c8-5_cuts5-4_8-5_5-3_15-8_8-3_report.json": "anc/proofs/s3/rational/n4_c8-5_cuts5-4_8-5_5-3_15-8_8-3_report.json",
+    "graph_experiment/three_against_one/n5_c23-10_cuts23-20_13-10_certificate.json": "anc/proofs/s3/rational/n5_c23-10_cuts23-20_13-10_certificate.json",
+    "graph_experiment/three_against_one/n5_c23-10_cuts23-20_13-10_cover.json": "anc/proofs/s3/rational/n5_c23-10_cuts23-20_13-10_cover.json",
+    "graph_experiment/three_against_one/n5_c23-10_cuts23-20_13-10_report.json": "anc/proofs/s3/rational/n5_c23-10_cuts23-20_13-10_report.json",
+    "fourpoint_proof/README.md": "anc/proofs/s3/0.400695372__c2/README.md",
+    "fourpoint_proof/cert_exact.json": "anc/proofs/s3/0.400695372__c2/cert_exact.json",
+    "fourpoint_proof/cert_stage2.json": "anc/proofs/s3/0.400695372__c2/cert_stage2.json",
+    "fourpoint_proof/cover_n4.json": "anc/proofs/s3/0.400695372__c2/cover_n4.json",
+    "fourpoint_proof/field_r.py": "anc/proofs/s3/0.400695372__c2/field_r.py",
+    "fourpoint_proof/independent/controls.log": "anc/proofs/s3/0.400695372__c2/independent/controls.log",
+    "fourpoint_proof/independent/controls.py": "anc/proofs/s3/0.400695372__c2/independent/controls.py",
+    "fourpoint_proof/independent/cover_indep.log": "anc/proofs/s3/0.400695372__c2/independent/cover_indep.log",
+    "fourpoint_proof/independent/cover_indep.py": "anc/proofs/s3/0.400695372__c2/independent/cover_indep.py",
+    "fourpoint_proof/independent/crosscheck_mp.log": "anc/proofs/s3/0.400695372__c2/independent/crosscheck_mp.log",
+    "fourpoint_proof/independent/mc_bf_limit.log": "anc/proofs/s3/0.400695372__c2/independent/mc_bf_limit.log",
+    "fourpoint_proof/independent/mc_indep.log": "anc/proofs/s3/0.400695372__c2/independent/mc_indep.log",
+    "fourpoint_proof/independent/qr.py": "anc/proofs/s3/0.400695372__c2/independent/qr.py",
+    "fourpoint_proof/independent/scores.json": "anc/proofs/s3/0.400695372__c2/independent/scores.json",
+    "fourpoint_proof/independent/verify_indep.log": "anc/proofs/s3/0.400695372__c2/independent/verify_indep.log",
+    "fourpoint_proof/independent/verify_indep.py": "anc/proofs/s3/0.400695372__c2/independent/verify_indep.py",
+    "fourpoint_proof/mc_check.py": "anc/proofs/s3/0.400695372__c2/mc_check.py",
+    "fourpoint_proof/redteam.log": "anc/proofs/s3/0.400695372__c2/redteam.log",
+    "fourpoint_proof/redteam.py": "anc/proofs/s3/0.400695372__c2/redteam.py",
+    "fourpoint_proof/verify.py": "anc/proofs/s3/0.400695372__c2/verify.py",
+    "fourpoint_proof/verify_stage2.log": "anc/proofs/s3/0.400695372__c2/verify_stage2.log",
+    "fourpoint_proof/verify_stage3.log": "anc/proofs/s3/0.400695372__c2/verify_stage3.log",
+    "graph_experiment/four_roll/field.py": "anc/proofs/s3/0.400695372__c2/five_point/field.py",
+    "graph_experiment/four_roll/exact_cover.py": "anc/proofs/s3/0.400695372__c2/five_point/exact_cover.py",
+    "graph_experiment/four_roll/verify_field_certificate.py": "anc/proofs/s3/0.400695372__c2/five_point/verify_field_certificate.py",
+    "graph_experiment/four_roll/n5_field_certificate.json": "anc/proofs/s3/0.400695372__c2/five_point/n5_field_certificate.json",
+    "graph_experiment/four_roll/n5_cut2_exact_cover.json": "anc/proofs/s3/0.400695372__c2/five_point/n5_cut2_exact_cover.json",
+    "graph_experiment/four_roll/n5_field_verification.json": "anc/proofs/s3/0.400695372__c2/five_point/n5_field_verification.json",
+    "graph_experiment/alpha3_exact_certificate.json": "anc/proofs/s2/0.508460361__alpha2_alpha3/alpha3_exact_certificate.json",
+    "graph_experiment/family_discontinuities.tex": "anc/proofs/s2/common/family_discontinuities.tex",
+    "graph_experiment/ladder_discontinuities.tex": "anc/proofs/s2/common/ladder_discontinuities.tex",
+    "graph_experiment/family_discontinuities.json": "anc/proofs/s2/common/family_discontinuities.json",
+    "graph_experiment/ladder_discontinuities.json": "anc/proofs/s2/common/ladder_discontinuities.json",
+    "graph_experiment/near_c2_certificate.json": "anc/proofs/common/tests/data/near_c2_certificate.json",
+    "graph_experiment/near_alpha2_refined_cover.json": "anc/proofs/s2/0.507073883__alpha1_alpha2/near_alpha2_refined_cover.json"
+  },
+  "legacy_proofs": [
+    "anc/proofs/s2/six_point_endpoints",
+    "anc/proofs/s3/silver_ratio_seven_point"
+  ],
+  "lean": "anc/lean/BeatAvg/Four/Final.lean",
+  "search": "anc/search/graph_experiment"
+}

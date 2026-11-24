@@ -1,0 +1,27 @@
+{
+  "interval": "(c4,tau1]",
+  "lower_algebraic": [
+    "-7065524/678147",
+    "-30079872/226049",
+    "108348359/452098",
+    "29928324/226049",
+    "-594193021/3616784",
+    "-95244207/1808392",
+    "2/3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "lower_rounded_down": "4627479964631/10000000000000",
+  "upper": "60211854047526690822607401186791/130117673881041412302270000000000",
+  "upper_rounded_up": "231374617497/500000000000",
+  "upper_decimal": 0.46274923499304704,
+  "maximum_interval_variation": "13/10000000",
+  "cover": "near_tau1_ratios_31_cover.json",
+  "certificate": "near_tau1_ratios_31_full_near_certificate.json",
+  "full_near_optimality": true,
+  "exact_plateau_proved": false,
+  "all_exact_checks_passed": true
+}

@@ -1,0 +1,17 @@
+{
+  "c": "3/2",
+  "support_exact": [
+    "0",
+    "17/24",
+    "1"
+  ],
+  "masses_exact": [
+    "167100120583/250000000000",
+    "110532905829/500000000000",
+    "11053370601/100000000000"
+  ],
+  "safe_scale_ratio_exact": "1/96",
+  "recursive_probability_exact": "893147676348180863109491612255118537117847409/2779188239384956602833178080624988915144629048",
+  "recursive_probability": 0.3213699826773293,
+  "interpretation": "Verified achieved lower bound; mass optimization is local."
+}

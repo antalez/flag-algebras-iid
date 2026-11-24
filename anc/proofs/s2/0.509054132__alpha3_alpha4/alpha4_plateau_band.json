@@ -1,0 +1,19 @@
+{
+  "interval": "(alpha3,alpha4]",
+  "lower_algebraic": [
+    "-43252/2523",
+    "5208/841",
+    "46964/7569",
+    "-17248/7569",
+    "2/3",
+    "0",
+    "0",
+    "0"
+  ],
+  "lower_rounded_down": "12726353322229/25000000000000",
+  "upper": "68727324611641214520889403/135009793324722480300000000",
+  "upper_decimal": 0.5090543650143943,
+  "maximum_interval_variation": "233/1000000000",
+  "exact_plateau_proved": false,
+  "all_exact_checks_passed": true
+}
